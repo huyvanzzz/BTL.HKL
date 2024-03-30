@@ -1,8 +1,8 @@
-public class AddWord {
+public class Word {
     private String key;
     private String def;
 
-    public AddWord(String key, String def) {
+    public Word(String key, String def) {
         this.key = key;
         this.def = def;
     }

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="javafx-base-18.0.2-win">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../javafx-base-18.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../javafx-controls-18.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../javafx-fxml-18.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../javafx-graphics-18.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../javafx-media-20.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../javafx-web-20.0.2-win.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
