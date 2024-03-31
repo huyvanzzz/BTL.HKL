@@ -1,27 +1,38 @@
 package org.example;
 
 public class Word {
-    private String word;
-    public String definition;
+    private String word_target;
+    public String word_explain;
 
-    public Word(String word, String definition) {
-        this.word = word;
-        this.definition = definition;
+    public Word() {
     }
 
-    public String getWord() {
-        return word;
+    public Word(String word_target, String word_explain) {
+        this.word_explain = word_explain;
+        this.word_target = word_target;
     }
 
-    public void setWord(String word) {
-        this.word = word;
+    public String getWord_target() {
+        return word_target;
     }
 
-    public String getDefinition() {
-        return definition;
+    public void setWord_target(String word_target) {
+        this.word_target = word_target;
     }
 
-    public void setDefinition(String definition) {
-        this.definition = definition;
+    public String getWord_explain() {
+        return word_explain;
+    }
+
+    public void setWord_explain(String word_explain) {
+        this.word_explain = word_explain;
+    }
+
+    @Override
+    public String toString() {
+        return "Word{" +
+                "word_target='" + word_target + '\'' +
+                ", word_explain='" + word_explain + '\'' +
+                '}';
     }
 }
