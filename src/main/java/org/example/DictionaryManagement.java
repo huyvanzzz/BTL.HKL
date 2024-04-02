@@ -1,5 +1,7 @@
 package org.example;
 
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.Scanner;
 
 public class DictionaryManagement extends Dictionary {
@@ -35,9 +37,22 @@ public class DictionaryManagement extends Dictionary {
       dictionary.wordArrayList.add(a);
     }
     public static void fix(Word a){
+      for(Word word : dictionary.wordArrayList){
 
+      }
     }
-    public static void delete(Word a){
-        dictionary.wordArrayList.remove(a);
+    public static void delete(String a){
+        if(dictionary.wordArrayList.contains(a)){
+        dictionary.wordArrayList.remove(a);}
+        else {
+            System.out.println("Invalid word");
+        }
+    }
+    public static void dictionaryExportToFile() throws Exception{
+        FileWriter fileWriter = new FileWriter("data/dictionaryExportToFile.txt");
+        int a = dictionary.wordArrayList.size();
+        for(Word word : dictionary.wordArrayList){
+            fileWriter.write(word.getWord_target()+"\t"+word.getWord_explain());
+        }
     }
 }
