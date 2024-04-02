@@ -4,23 +4,25 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class DictionaryCommandline extends DictionaryManagement{
-    public static void showAllWords(){
+public class DictionaryCommandline extends DictionaryManagement {
+    public static void showAllWords() {
         Collections.sort(dictionary.wordArrayList, new Comparator<Word>() {
             @Override
             public int compare(Word o1, Word o2) {
                 return o1.getWord_target().compareToIgnoreCase(o2.getWord_target());
             }
         });
-        for(Word word : dictionary.wordArrayList){
+        for (Word word : dictionary.wordArrayList) {
             System.out.println(word);
         }
     }
-    public static void dictionaryBasic(){
+
+    public static void dictionaryBasic() {
         insertFromCommandline();
         showAllWords();
     }
-    public static void  dictionarySearcher(String x){
+
+    public static void dictionarySearcher(String x) {
     }
 
     /**
@@ -38,9 +40,9 @@ public class DictionaryCommandline extends DictionaryManagement{
      * [9] Export to file
      * Your action:
      */
-    public static void dictionaryAdvanced() throws Exception{
+    public static void dictionaryAdvanced() throws Exception {
         boolean check = true;
-        while (check==true) {
+        while (check == true) {
             System.out.println("Welcome to My Application!");
             System.out.println("[0] Exit");
             System.out.println("[1] Add");

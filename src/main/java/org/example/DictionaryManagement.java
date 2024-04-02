@@ -18,6 +18,7 @@ public class DictionaryManagement extends Dictionary {
             Word word = new Word(wordE, def);
             dictionary.wordArrayList.add(word);
         }
+        sc.close();
     }
 
     public static void insertFromFile() throws Exception {
