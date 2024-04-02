@@ -33,26 +33,32 @@ public class DictionaryManagement extends Dictionary {
             }
         }
     }
-    public static void addword(Word a){
-      dictionary.wordArrayList.add(a);
-    }
-    public static void fix(Word a){
-      for(Word word : dictionary.wordArrayList){
 
-      }
+    public static void addword(Word a) {
+        dictionary.wordArrayList.add(a);
     }
-    public static void delete(String a){
-        if(dictionary.wordArrayList.contains(a)){
-        dictionary.wordArrayList.remove(a);}
-        else {
-            System.out.println("Invalid word");
+
+    public static void fix(Word a) {
+        for (Word word : dictionary.wordArrayList) {
+
         }
     }
-    public static void dictionaryExportToFile() throws Exception{
+
+    public static void delete(String a) {
+        for (Word word : dictionary.wordArrayList) {
+            if (a.equalsIgnoreCase(word.getWord_target())) {
+                dictionary.wordArrayList.remove(word);
+            } else {
+                System.out.println("Invalid word");
+            }
+        }
+    }
+
+    public static void dictionaryExportToFile() throws Exception {
         FileWriter fileWriter = new FileWriter("data/dictionaryExportToFile.txt");
         int a = dictionary.wordArrayList.size();
-        for(Word word : dictionary.wordArrayList){
-            fileWriter.write(word.getWord_target()+"\t"+word.getWord_explain());
+        for (Word word : dictionary.wordArrayList) {
+            fileWriter.write(word.getWord_target() + "\t" + word.getWord_explain());
         }
     }
 }
