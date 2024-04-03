@@ -41,7 +41,9 @@ public class DictionaryManagement extends Dictionary {
 
     public static void fix(Word a) {
         for (Word word : dictionary.wordArrayList) {
-
+          if(a.getWord_target().equals(word.getWord_target())){
+              word.word_explain =a.word_explain;
+          }
         }
     }
 
@@ -57,7 +59,6 @@ public class DictionaryManagement extends Dictionary {
 
     public static void dictionaryExportToFile() throws Exception {
         FileWriter fileWriter = new FileWriter("data/dictionaryExportToFile.txt");
-        int a = dictionary.wordArrayList.size();
         for (Word word : dictionary.wordArrayList) {
             fileWriter.write(word.getWord_target() + "\t" + word.getWord_explain());
         }

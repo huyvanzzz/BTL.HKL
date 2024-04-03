@@ -23,6 +23,11 @@ public class DictionaryCommandline extends DictionaryManagement {
     }
 
     public static void dictionarySearcher(String x) {
+        for (Word word: dictionary.wordArrayList){
+            if(word.getWord_target().contains(x)){
+                System.out.println(word);
+            }
+        }
     }
 
     /**
@@ -98,7 +103,17 @@ public class DictionaryCommandline extends DictionaryManagement {
             }
             if (a == 7) {
                 System.out.println("Start Game: ");
+                int h = sc.nextInt();
+                sc.nextLine();
+                if(h==1){
+                    ChooseTheRightWordGame.ChooseTheRightWord();
+                }
+                if(h==2){
 
+                }
+                if(h==3){
+
+                }
             }
             if (a == 8) {
                 System.out.println("Import from file: ");
