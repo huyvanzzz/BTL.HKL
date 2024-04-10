@@ -25,7 +25,7 @@ public class DictionaryCommandline extends DictionaryManagement {
     public static void dictionarySearcher(String x) {
         for (Word word: dictionary.wordArrayList){
             if(word.getWord_target().contains(x)){
-                System.out.println(word);
+                System.out.println(word.getWord_target());
             }
         }
     }
@@ -117,7 +117,7 @@ public class DictionaryCommandline extends DictionaryManagement {
             }
             if (a == 8) {
                 System.out.println("Import from file: ");
-
+                dictionaryBasic();
             }
             if (a == 9) {
                 System.out.println("Export to file: ");

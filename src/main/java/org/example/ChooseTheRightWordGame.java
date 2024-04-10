@@ -25,6 +25,14 @@ public class ChooseTheRightWordGame {
             D = y[4];
             E = y[5];
             System.out.println(y[0]);
+            for (int i=1;i<=5;i++){
+              if(y[0]==y[i]){
+                  System.out.println("Correct");
+              }
+              else {
+                  System.out.println("Don't Correct, Better luck next time :>");
+              }
+            }
         }
     }
 }

@@ -2,6 +2,7 @@ package org.example;
 
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class DictionaryManagement extends Dictionary {
@@ -40,20 +41,30 @@ public class DictionaryManagement extends Dictionary {
     }
 
     public static void fix(Word a) {
-        for (Word word : dictionary.wordArrayList) {
-          if(a.getWord_target().equals(word.getWord_target())){
-              word.word_explain =a.word_explain;
+        Iterator<Word> iterator = dictionary.wordArrayList.iterator();
+        while (iterator.hasNext()) {
+            // iterator.next() là 1 giá trị word trong mảng
+          if(a.getWord_target().equals(iterator.next().getWord_target())){
+              iterator.next().setWord_explain(a.getWord_explain());
+          }
+          else {
+              System.out.println("Invalid word");
           }
         }
     }
 
     public static void delete(String a) {
-        for (Word word : dictionary.wordArrayList) {
-            if (a.equalsIgnoreCase(word.getWord_target())) {
-                dictionary.wordArrayList.remove(word);
-            } else {
-                System.out.println("Invalid word");
+        String z = a.toLowerCase();
+        boolean delete = dictionary.wordArrayList.removeIf(word->{
+            if(word.getWord_target().equalsIgnoreCase(z)){
+                return true;
             }
+            else {
+                return false;
+            }
+        });
+        if(!(delete)){
+            System.out.println("Invalid work");
         }
     }
 
