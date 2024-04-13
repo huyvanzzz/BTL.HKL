@@ -11,6 +11,10 @@ public class Dictionary extends Word {
     public static final String fileName = "data/dictionaryAdvanced.txt";
     public static final String tab = "\t";
 
+    public static Dictionary getDictionary() {
+        return dictionary;
+    }
+
     public void addWord() throws Exception {
 
         FileReader fileReader = new FileReader(fileName);
