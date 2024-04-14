@@ -4,7 +4,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 public class DictionaryApplication extends Application {
-    public static void runApplication(){
+    public static void runApplication() throws Exception {
       launch();
     }
 
