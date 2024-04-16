@@ -1,8 +1,6 @@
 package org.example.dictionary;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Scanner;
+import java.util.*;
 
 public class DictionaryCommandline extends DictionaryManagement {
     public static void showAllWords() {
@@ -22,12 +20,14 @@ public class DictionaryCommandline extends DictionaryManagement {
         showAllWords();
     }
 
-    public static void dictionarySearcher(String x) {
-        for (Word word: dictionary.wordArrayList){
-            if(word.getWord_target().contains(x)){
-                System.out.println(word.getWord_target());
+    public static List<String> dictionarySearcher(String x) {
+        List<String> word = new ArrayList<>();
+        for (Word word1: dictionary.wordArrayList){
+            if(word1.getWord_target().startsWith(x)){
+               word.add(word1.getWord_target());
             }
         }
+        return word;
     }
 
     /**
