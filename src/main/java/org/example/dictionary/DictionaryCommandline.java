@@ -3,6 +3,7 @@ package org.example.dictionary;
 import java.util.*;
 
 public class DictionaryCommandline extends DictionaryManagement {
+    public static double speed = 1;
     public static void showAllWords() {
         dictionary.wordArrayList.sort(new Comparator<Word>() {
             @Override
