@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.API">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="1100.0">
+         <left>
+            <AnchorPane prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #D9D9D9;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="137.0" layoutX="108.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/coanh.png" />
+                     </image>
+                  </ImageView>
+                  <TextArea layoutX="43.0" layoutY="201.0" prefHeight="400.0" prefWidth="300.0" promptText="Type your word to translate here">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="700.0" prefWidth="592.0" style="-fx-background-color: #D9D9D9;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextArea layoutX="34.0" layoutY="200.0" prefHeight="400.0" prefWidth="300.0" />
+                  <ImageView fitHeight="69.0" fitWidth="124.0" layoutX="109.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/vietnam.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+         <center>
+            <AnchorPane prefHeight="700.0" prefWidth="254.0" style="-fx-background-color: #D9D9D9;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="38.0" layoutY="322.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="86.0" style="-fx-background-color: #D9D9D9;">
+                     <graphic>
+                        <ImageView fitHeight="86.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/tabs/Google_Translate_logo.svg.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Search">
+    <children>
+        <BorderPane prefHeight="700.0" prefWidth="1100.0">
+            <left>
+                <AnchorPane prefHeight="700.0" prefWidth="305.0" style="-fx-background-color: #D9D9D9;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ListView layoutX="4.0" layoutY="2.0" prefHeight="684.0" prefWidth="295.0" />
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D9D9D9;" BorderPane.alignment="CENTER">
+                    <children>
+                        <WebView layoutX="41.0" layoutY="88.0" prefHeight="596.0" prefWidth="703.0" />
+                        <HBox layoutX="8.0" prefHeight="76.0" prefWidth="608.0">
+                            <children>
+                                <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="0.0" style="-fx-background-color: #D9D9D9;" />
+                                <Pane prefHeight="76.0" prefWidth="616.0">
+                                    <children>
+                                        <Label layoutX="19.0" layoutY="24.0" prefHeight="40.0" prefWidth="370.0" style="-fx-background-color: #FFFFFF;" text="Wordtarget" />
+                                        <Button layoutX="389.0" layoutY="22.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="50.0">
+                                            <graphic>
+                                                <ImageView fitHeight="36.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icons/tabs/Speak.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
