@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d11b8a22-21a9-4d10-a51b-6d32990db35f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/org/example/demo/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/org/example/demo/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/org/example/demo/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/AddController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Daco_752371.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Goto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Swap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Trans.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/arrowDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/arrowUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/blueAdd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/english.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/game1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/game2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/gameover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/vietnamese.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/volume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/application.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/icons/book.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DictionaryApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryCommandline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryCommandline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/nora/dictionary/controllers/ApplicationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/API.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/API.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/AddWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/AddWord.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Change.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Remove.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/Search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/add.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/history.fxml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2YqysRq7tuXhWkbTNKb3m7pY8gI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Application.org.example.dictionary.Main.executor": "Run",
+    "JUnit.All in App.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Admin/Documents/UET-Dictionary-main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\huyz - Copy\BTLHKL\.idea" />
+      <recent name="C:\Users\USER\Documents\GitHub\UET-Dictionary\src\main\resources\application\app\Icon" />
+      <recent name="C:\Users\USER\Downloads\App (1)\App\target" />
+      <recent name="C:\Users\USER\Downloads\App (1)\App\src\main\java" />
+      <recent name="C:\Users\USER\Downloads\App (1)\App\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.org.example.dictionary.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.app.Main" />
+      <module name="App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.example.dictionary.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.dictionary.Main" />
+      <module name="App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in App" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="App" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="UET-Dictionary" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="UET-Dictionary" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.org.example.dictionary.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d11b8a22-21a9-4d10-a51b-6d32990db35f" name="Changes" comment="" />
+      <created>1701267612526</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701267612526</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

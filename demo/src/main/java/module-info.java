@@ -1,4 +1,4 @@
-module org.example.dictionary {
+module org.example.demo {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,10 +10,7 @@ module org.example.dictionary {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
-    requires jsapi;
 
-    opens org.example.dictionary to javafx.fxml;
-    exports org.example.dictionary;
-    exports Controller;
-    opens Controller to javafx.fxml;
+    opens org.example.demo to javafx.fxml;
+    exports org.example.demo;
 }

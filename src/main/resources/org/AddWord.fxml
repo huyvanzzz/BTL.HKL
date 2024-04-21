@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.web.HTMLEditor?>
+<?import javafx.scene.layout.Pane?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nora.dictionary.controllers.AddController">
-    <left>
-        <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #D9D9D9;" BorderPane.alignment="CENTER">
-            <children>
-                <TextArea layoutX="45.0" layoutY="43.0" onKeyTyped="#onWordFieldType" prefHeight="70.0" prefWidth="458.0" promptText="Type word to add to dictionary here" stylesheets="@css/search-bar.css" wrapText="true">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </TextArea>
-                <AnchorPane layoutX="56.0" layoutY="160.0" styleClass="explain-pane" stylesheets="@css/explain-pane.css" />
-                <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="45.0" layoutY="140.0" prefHeight="310.0" prefWidth="462.0" />
-                <Button layoutX="75.0" layoutY="494.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="151.0" style="-fx-background-color: #348f99;" text="Add word to dictionary" textFill="#363838">
-                    <font>
-                        <Font name="System Bold" size="12.0" />
-                    </font>
-                </Button>
-            </children>
-        </AnchorPane>
-    </left>
-</BorderPane>
+<AnchorPane fx:id="AddanchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="943.0" style="-fx-background-color: linear-gradient(to top, #00c6fb 0%, #005bea 100%);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddController">
+   <children>
+      <Pane layoutX="82.0" layoutY="144.0" prefHeight="426.0" prefWidth="695.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30; -fx-border-radius: 30;">
+         <children>
+            <TextField fx:id="ExplainField" alignment="TOP_LEFT" layoutX="14.0" layoutY="40.0" prefHeight="281.0" prefWidth="552.0" promptText="Explain Word :" style="-fx-font-size: 25; -fx-background-color: transparent;" stylesheets="@application.css">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="addOrUpdate" layoutX="35.0" layoutY="330.0" mnemonicParsing="false" onAction="#AddOrUpdateWord" prefHeight="25.0" prefWidth="35.0">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <TextField fx:id="WordField" layoutX="67.0" layoutY="52.0" prefHeight="48.0" prefWidth="742.0" promptText="Add Or Update Word :" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30; -fx-border-radius: 30;" />
+      <Button fx:id="removeWord" layoutX="844.0" layoutY="56.0" mnemonicParsing="false" onAction="#RemoveWord" prefHeight="39.0" prefWidth="38.0">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/tabs/delete_forever.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

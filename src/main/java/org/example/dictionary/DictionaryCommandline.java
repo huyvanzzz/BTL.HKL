@@ -124,7 +124,7 @@ public class DictionaryCommandline extends DictionaryManagement {
             }
             if (a == 9) {
                 System.out.println("Export to file: ");
-                DictionaryManagement.dictionaryExportToFile();
+                DictionaryManagement.dictionaryExportToFile("dictionaryAdvanced.txt");
             }
             if (a < 0 || a > 9) {
                 System.out.println("Action not supported");

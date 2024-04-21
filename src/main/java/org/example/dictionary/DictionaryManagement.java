@@ -1,6 +1,6 @@
 package org.example.dictionary;
 
-import java.io.FileReader;
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Iterator;
@@ -28,14 +28,13 @@ public class DictionaryManagement extends Dictionary {
 
     }
 
-    public static void dictionaryLookup(String vocabulary) {
+    public static boolean dictionaryLookup(String vocabulary) {
         for (Word word : dictionary.wordArrayList) {
             if (vocabulary.equalsIgnoreCase(word.getWord_target())) {
-                System.out.println(word.getWord_explain());
-            } else {
-                System.out.println("Invalid word");
+               return true;
             }
         }
+        return false;
     }
 
     public static void addword(Word a) {
@@ -68,11 +67,10 @@ public class DictionaryManagement extends Dictionary {
         }
     }
 
-    public static void dictionaryExportToFile() {
-        try {
-            FileWriter fileWriter = new FileWriter("data/dictionaryExportToFile.txt");
+    public static void dictionaryExportToFile(String path) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
             for (Word word : dictionary.wordArrayList) {
-                fileWriter.write(word.getWord_target() + "\t" + word.getWord_explain());
+                writer.write(word.getWord_target() + "\t" + word.getWord_explain() + "\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
