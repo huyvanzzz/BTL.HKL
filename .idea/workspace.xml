@@ -5,61 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d11b8a22-21a9-4d10-a51b-6d32990db35f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/org/example/demo/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/org/example/demo/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/org/example/demo/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/AddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Daco_752371.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Goto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Swap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Trans.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/Up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/arrowDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/arrowUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/blueAdd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/english.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/game.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/game1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/game2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/gameover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/vietnamese.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Icon/volume.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/application.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/icons/book.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DictionaryApplication.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryCommandline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryCommandline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nora/dictionary/controllers/ApplicationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/ApplicationDictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/API.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/API.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/AddWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/AddWord.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Change.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/Main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Remove.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/Search.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/add.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/history.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +51,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.ApplicationDictionary.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.org.example.dictionary.Main.executor": "Run",
     "JUnit.All in App.executor": "Debug",
@@ -126,13 +77,13 @@
       <recent name="C:\Users\USER\Downloads\App (1)\App\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.example.dictionary.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="application.app.Main" />
+  <component name="RunManager" selected="Application.ApplicationDictionary">
+    <configuration name="ApplicationDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application.ApplicationDictionary" />
       <module name="App" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="application.app.*" />
+          <option name="PATTERN" value="Controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.dictionary.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.dictionary.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.app.Main" />
       <module name="App" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="application.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,7 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.org.example.dictionary.Main" />
+        <item itemvalue="Application.ApplicationDictionary" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in App" />
       </list>

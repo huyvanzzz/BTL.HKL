@@ -16,4 +16,6 @@ module org.example.dictionary {
     exports org.example.dictionary;
     exports Controller;
     opens Controller to javafx.fxml;
+    exports Application;
+    opens Application to javafx.fxml;
 }

@@ -1,56 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.API">
+<AnchorPane prefHeight="700.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ApiController">
    <children>
-      <BorderPane prefHeight="700.0" prefWidth="1100.0">
-         <left>
-            <AnchorPane prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #D9D9D9;" BorderPane.alignment="CENTER">
-               <children>
-                  <ImageView fitHeight="67.0" fitWidth="137.0" layoutX="108.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+      <Pane prefHeight="700.0" prefWidth="905.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 30; -fx-background-radius: 30;">
+         <children>
+            <TextArea fx:id="TransIn" layoutX="87.0" layoutY="238.0" prefHeight="368.0" prefWidth="292.0" promptText="abc" style="-fx-border-radius: 25;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="TransOut" layoutX="479.0" layoutY="238.0" prefHeight="368.0" prefWidth="292.0" promptText="xyz">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextArea>
+            <ImageView layoutX="379.0" layoutY="343.0">
+               <image>
+                  <Image url="@Icon/Goto.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="LangIn" layoutX="158.0" layoutY="121.0" prefHeight="120.0" prefWidth="150.0" text=" English">
+               <graphic>
+                  <ImageView fitHeight="84.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@icons/tabs/coanh.png" />
+                        <Image url="@Icon/english.png" />
                      </image>
                   </ImageView>
-                  <TextArea layoutX="43.0" layoutY="201.0" prefHeight="400.0" prefWidth="300.0" promptText="Type your word to translate here">
-                     <font>
-                        <Font name="System Bold" size="17.0" />
-                     </font>
-                  </TextArea>
-               </children>
-            </AnchorPane>
-         </left>
-         <right>
-            <AnchorPane prefHeight="700.0" prefWidth="592.0" style="-fx-background-color: #D9D9D9;" BorderPane.alignment="CENTER">
-               <children>
-                  <TextArea layoutX="34.0" layoutY="200.0" prefHeight="400.0" prefWidth="300.0" />
-                  <ImageView fitHeight="69.0" fitWidth="124.0" layoutX="109.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="LangOut" layoutX="536.0" layoutY="121.0" prefHeight="120.0" prefWidth="178.0" text="Vietnamese">
+               <graphic>
+                  <ImageView fitHeight="81.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@icons/tabs/vietnam.png" />
+                        <Image url="@Icon/vietnamese.png" />
                      </image>
                   </ImageView>
-               </children>
-            </AnchorPane>
-         </right>
-         <center>
-            <AnchorPane prefHeight="700.0" prefWidth="254.0" style="-fx-background-color: #D9D9D9;" BorderPane.alignment="CENTER">
-               <children>
-                  <Button layoutX="38.0" layoutY="322.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="86.0" style="-fx-background-color: #D9D9D9;">
-                     <graphic>
-                        <ImageView fitHeight="86.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icons/tabs/Google_Translate_logo.svg.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-               </children>
-            </AnchorPane>
-         </center>
-      </BorderPane>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="Trans" layoutX="379.0" layoutY="626.0" mnemonicParsing="false" onAction="#translateWord" prefHeight="39.0" prefWidth="100.0" text="Translate">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icon/Trans.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Swap" layoutX="405.0" layoutY="158.0" mnemonicParsing="false" onAction="#swapTrans" prefHeight="46.0" prefWidth="48.0">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icon/Swap.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="746.0" layoutY="79.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="34.0">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icon/volume.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
