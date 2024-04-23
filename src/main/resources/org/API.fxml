@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
@@ -8,39 +9,119 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ApiController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="908.0" style="-fx-background-color: linear-gradient(to top, #00c6fb 0%, #005bea 100%);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ApiController">
    <children>
-      <Pane prefHeight="700.0" prefWidth="905.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 30; -fx-background-radius: 30;">
+      <Pane layoutY="7.0" prefHeight="55.0" prefWidth="886.0" style="-fx-background-color: linear-gradient(to top, #00c6fb 0%, #005bea 100%); -fx-background-radius: 30; -fx-border-radius: 30;">
          <children>
-            <TextArea fx:id="TransIn" layoutX="87.0" layoutY="238.0" prefHeight="368.0" prefWidth="292.0" promptText="abc" style="-fx-border-radius: 25;">
+            <Text fill="WHITE" layoutX="18.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English Dictionary" wrappingWidth="850.1367244720459">
                <font>
-                  <Font size="24.0" />
+                  <Font name="System Bold" size="26.0" />
                </font>
-            </TextArea>
-            <TextArea fx:id="TransOut" layoutX="479.0" layoutY="238.0" prefHeight="368.0" prefWidth="292.0" promptText="xyz">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </TextArea>
-            <ImageView layoutX="379.0" layoutY="343.0">
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="251.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Icon/Goto.png" />
+                  <Image url="@icons/book.png" />
                </image>
             </ImageView>
-            <Label fx:id="LangIn" layoutX="158.0" layoutY="121.0" prefHeight="120.0" prefWidth="150.0" text=" English">
+         </children>
+      </Pane>
+      <Pane layoutY="89.0" prefHeight="563.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25;">
+         <children>
+            <Button fx:id="search" alignment="BASELINE_LEFT" graphicTextGap="42.0" layoutX="3.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchToSearchScene" prefHeight="46.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
                <graphic>
-                  <ImageView fitHeight="84.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView id="css\tab-buttons.css" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="tab-button">
                      <image>
-                        <Image url="@Icon/english.png" />
+                        <Image url="@icons/tabs/search.png" />
                      </image>
                   </ImageView>
                </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="2.0" layoutY="145.0" mnemonicParsing="false" onAction="#switchToOperationScene" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Operation Word" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/change.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="2.0" layoutY="202.0" mnemonicParsing="false" onAction="#switchToGameScene" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Game" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/game.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="88.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Google Translate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/g_translate.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="2.0" layoutY="262.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="History" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/history.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="223.0" layoutY="89.0" prefHeight="563.0" prefWidth="670.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 30; -fx-background-radius: 30;">
+         <children>
+            <TextArea fx:id="TransOutput" layoutX="364.0" layoutY="130.0" prefHeight="368.0" prefWidth="292.0" promptText="Trans:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="TransInput" layoutX="14.0" layoutY="130.0" prefHeight="368.0" prefWidth="292.0" promptText="Text:" style="-fx-border-radius: 25;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="LabelOut" layoutX="427.0" layoutY="47.0" prefHeight="83.0" prefWidth="178.0" text="Vietnamese">
                <font>
                   <Font size="18.0" />
                </font>
-            </Label>
-            <Label fx:id="LangOut" layoutX="536.0" layoutY="121.0" prefHeight="120.0" prefWidth="178.0" text="Vietnamese">
                <graphic>
                   <ImageView fitHeight="81.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -48,11 +129,20 @@
                      </image>
                   </ImageView>
                </graphic>
+            </Label>
+            <Label fx:id="LabelIn" layoutX="86.0" layoutY="47.0" prefHeight="83.0" prefWidth="149.0" text=" English">
                <font>
                   <Font size="18.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="84.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icon/english.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Label>
-            <Button fx:id="Trans" layoutX="379.0" layoutY="626.0" mnemonicParsing="false" onAction="#translateWord" prefHeight="39.0" prefWidth="100.0" text="Translate">
+            <Button fx:id="Trans" layoutX="285.0" layoutY="508.0" mnemonicParsing="false" onAction="#translate" prefHeight="39.0" prefWidth="100.0" text="Translate">
                <graphic>
                   <ImageView fitHeight="28.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -61,16 +151,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="Swap" layoutX="405.0" layoutY="158.0" mnemonicParsing="false" onAction="#swapTrans" prefHeight="46.0" prefWidth="48.0">
-               <graphic>
-                  <ImageView fitHeight="16.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Icon/Swap.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="746.0" layoutY="79.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="34.0">
+            <Button layoutX="605.0" layoutY="14.0" mnemonicParsing="false" onAction="#sound" prefHeight="42.0" prefWidth="34.0">
                <graphic>
                   <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -79,6 +160,20 @@
                   </ImageView>
                </graphic>
             </Button>
+            <Button fx:id="Swap" layoutX="311.0" layoutY="71.0" mnemonicParsing="false" onAction="#swap" prefHeight="46.0" prefWidth="48.0">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icon/Swap.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="55.0" fitWidth="48.0" layoutX="311.0" layoutY="266.0">
+               <image>
+                  <Image url="@Icon/Goto.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

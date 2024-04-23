@@ -31,14 +31,4 @@ public class TranslateAPI {
             return null; // Hoặc trả về giá trị mặc định hoặc thông báo lỗi tùy thuộc vào yêu cầu
         }
     }
-
-    public static void main(String[] args) {
-        String text = "word";
-        String translatedText = googleTranslate("", "vi", text);
-        if (translatedText != null) {
-            System.out.println("Translated text: \n" + translatedText);
-        } else {
-            System.out.println("Translation failed.");
-        }
-    }
 }

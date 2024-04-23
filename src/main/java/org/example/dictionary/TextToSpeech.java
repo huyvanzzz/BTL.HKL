@@ -19,9 +19,8 @@ public class TextToSpeech {
             service = Executors.newFixedThreadPool(3);
         }
 
-        Future<String> future = service.submit(new Callable<String>() {
-            @Override
-            public String call() throws Exception {
+        Future<String> future = service.submit(() -> {
+            try {
                 System.setProperty(
                         "freetts.voices",
                         "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory"
@@ -34,12 +33,21 @@ public class TextToSpeech {
                 speakPlainText.resume();
                 speakPlainText.speakPlainText(word, null);
                 speakPlainText.waitEngineState(Synthesizer.QUEUE_EMPTY);
-                return "completed";
+                return "finished";
+            } catch (Exception e) {
+                e.printStackTrace();
+                return "error";
             }
         });
     }
 
-    public static void deallocateSynthesizer() {
+
+    public static void shutDown() {
+        deallocate();
+        shutdownService();
+    }
+
+    public static void deallocate() {
         if (speakPlainText == null) {
             return;
         }
@@ -51,11 +59,11 @@ public class TextToSpeech {
         }
     }
 
-    public static void shutdownExecutorService() {
+    public static void shutdownService() {
         if (service != null) {
             service.shutdown();
             try {
-                if (!service.awaitTermination(1000, TimeUnit.MILLISECONDS)) {
+                if (!service.awaitTermination(1, TimeUnit.SECONDS)) {
                     service.shutdownNow();
                 }
             } catch (InterruptedException e) {
@@ -64,8 +72,5 @@ public class TextToSpeech {
         }
     }
 
-    public static void shutDown() {
-        deallocateSynthesizer();
-        shutdownExecutorService();
-    }
+
 }

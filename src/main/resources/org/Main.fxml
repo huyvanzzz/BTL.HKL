@@ -2,150 +2,157 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ConTroller">
-    <children>
-        <BorderPane prefHeight="750.0" prefWidth="1300.0">
-            <left>
-                <VBox prefHeight="449.0" prefWidth="200.0" style="-fx-background-color: #202D38;" BorderPane.alignment="CENTER">
-                    <children>
-                        <Pane prefHeight="682.0" prefWidth="200.0" style="-fx-background-color: #202D38;">
-                            <children>
-                                <Button fx:id="search" alignment="BASELINE_LEFT" graphicTextGap="42.0" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Search" textFill="WHITE">
-                                    <font>
-                                        <Font name="System Bold" size="16.0" />
-                                    </font>
-                                    <graphic>
-                                        <ImageView id="css\tab-buttons.css" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="tab-button">
-                                            <image>
-                                                <Image url="@icons/tabs/search.png" />
-                                            </image>
-                                        </ImageView>
-                                    </graphic>
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                </Button>
-                                <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="60.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Add Word" textFill="WHITE">
-                                    <font>
-                                        <Font name="System Bold" size="16.0" />
-                                    </font>
-                                    <graphic>
-                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@icons/tabs/add.png" />
-                                            </image>
-                                        </ImageView>
-                                    </graphic>
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                </Button>
-                                <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="109.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Change Word" textFill="WHITE">
-                                    <font>
-                                        <Font name="System Bold" size="16.0" />
-                                    </font>
-                                    <graphic>
-                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@icons/tabs/change.png" />
-                                            </image>
-                                        </ImageView>
-                                    </graphic>
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                </Button>
-                                <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="160.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Remove Word" textFill="WHITE">
-                                    <font>
-                                        <Font name="System Bold" size="16.0" />
-                                    </font>
-                                    <graphic>
-                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@icons/tabs/remove.png" />
-                                            </image>
-                                        </ImageView>
-                                    </graphic>
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                </Button>
-                                <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="212.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="History" textFill="WHITE">
-                                    <font>
-                                        <Font name="System Bold" size="16.0" />
-                                    </font>
-                                    <graphic>
-                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@icons/tabs/history.png" />
-                                            </image>
-                                        </ImageView>
-                                    </graphic>
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                </Button>
-                                <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="264.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Game" textFill="WHITE">
-                                    <font>
-                                        <Font name="System Bold" size="16.0" />
-                                    </font>
-                                    <graphic>
-                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@icons/tabs/game.png" />
-                                            </image>
-                                        </ImageView>
-                                    </graphic>
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                </Button>
-                                <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="313.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Google Translate" textFill="WHITE">
-                                    <font>
-                                        <Font name="System Bold" size="16.0" />
-                                    </font>
-                                    <graphic>
-                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@icons/tabs/g_translate.png" />
-                                            </image>
-                                        </ImageView>
-                                    </graphic>
-                                    <padding>
-                                        <Insets left="10.0" />
-                                    </padding>
-                                </Button>
-                            </children>
-                        </Pane>
-                    </children>
-                </VBox>
-            </left>
-            <top>
-                <HBox prefHeight="37.0" prefWidth="1300.0" style="-fx-background-color: #202D38;" BorderPane.alignment="CENTER">
-                    <children>
-                        <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@icons/tabs/logoTflast.png" />
-                            </image>
-                        </ImageView>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="English Dictionary" wrappingWidth="225.3367519378662">
-                            <font>
-                                <Font name="System Bold" size="26.0" />
-                            </font>
-                        </Text>
-                    </children>
-                </HBox>
-            </top>
-        </BorderPane>
-    </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="908.0" style="-fx-background-color: linear-gradient(to top, #00c6fb 0%, #005bea 100%);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SearchController">
+   <children>
+      <Pane layoutY="7.0" prefHeight="55.0" prefWidth="886.0" style="-fx-background-color: linear-gradient(to top, #00c6fb 0%, #005bea 100%); -fx-background-radius: 30; -fx-border-radius: 30;">
+         <children>
+            <Text fill="WHITE" layoutX="18.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English Dictionary" wrappingWidth="850.1367244720459">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="251.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/book.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="89.0" prefHeight="563.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25;">
+         <children>
+            <Button fx:id="search" alignment="BASELINE_LEFT" graphicTextGap="42.0" layoutX="3.0" layoutY="20.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView id="css\tab-buttons.css" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="tab-button">
+                     <image>
+                        <Image url="@icons/tabs/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="134.0" mnemonicParsing="false" onAction="#switchToOperationScene" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Operation Word" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/change.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="188.0" mnemonicParsing="false" onAction="#switchToGameScene" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Game" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/game.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="2.0" layoutY="80.0" mnemonicParsing="false" onAction="#switchToAPIScene" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="Google Translate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/g_translate.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="246.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@css/tab-buttons.css" text="History" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/tabs/history.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="223.0" layoutY="89.0" prefHeight="563.0" prefWidth="670.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 30; -fx-background-radius: 30;">
+         <children>
+            <Pane layoutX="7.0" layoutY="70.0" prefHeight="477.0" prefWidth="234.0" style="-fx-border-color: #2FA3E4;" stylesheets="@application.css">
+               <children>
+                  <ListView fx:id="listView" layoutY="57.0" prefHeight="420.0" prefWidth="234.0" stylesheets="@application.css" />
+                  <Label layoutX="68.0" layoutY="14.0" prefHeight="35.0" prefWidth="99.0" stylesheets="@application.css" text="Dictionary">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="255.0" layoutY="70.0" prefHeight="477.0" prefWidth="401.0" style="-fx-border-color: #2FA3E4;">
+               <children>
+                  <Pane layoutY="236.0" prefHeight="240.0" prefWidth="401.0">
+                     <children>
+                        <Label fx:id="explain" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="209.0" prefWidth="315.0" stylesheets="@application.css" text="Explain" />
+                        <Button layoutX="333.0" layoutY="183.0" mnemonicParsing="false" onAction="#RemoveWord" prefHeight="40.0" prefWidth="37.0">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icon/delete.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="240.0" prefWidth="401.0" style="-fx-border-color: #2FA3E4;">
+                     <children>
+                        <Label fx:id="word" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="209.0" prefWidth="315.0" stylesheets="@application.css" text="Word" />
+                        <Button layoutX="335.0" layoutY="14.0" mnemonicParsing="false" onAction="#sound" prefHeight="40.0" prefWidth="26.0">
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icon/volume.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <TextField fx:id="searchField" layoutX="15.0" layoutY="14.0" prefHeight="40.0" prefWidth="641.0" promptText="Search Word:" style="-fx-border-color: #2FA3E4; -fx-background-radius: 30; -fx-border-radius: 30;" stylesheets="@application.css" />
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>

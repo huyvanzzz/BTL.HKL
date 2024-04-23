@@ -3,14 +3,9 @@ package org.example.dictionary;
 import java.util.*;
 
 public class DictionaryCommandline extends DictionaryManagement {
-    public static double speed = 1;
+
     public static void showAllWords() {
-        dictionary.wordArrayList.sort(new Comparator<Word>() {
-            @Override
-            public int compare(Word o1, Word o2) {
-                return o1.getWord_target().compareToIgnoreCase(o2.getWord_target());
-            }
-        });
+        sortList();
         for (Word word : dictionary.wordArrayList) {
             System.out.println(word);
         }
@@ -21,14 +16,19 @@ public class DictionaryCommandline extends DictionaryManagement {
         showAllWords();
     }
 
-    public static List<String> dictionarySearcher(String x) {
-        List<String> word = new ArrayList<>();
-        for (Word word1: dictionary.wordArrayList){
-            if(word1.getWord_target().startsWith(x)){
-               word.add(word1.getWord_target());
+    public static void dictionarySearcher(String x) {
+        searcher = new ArrayList<>();
+        if (x.isEmpty()) {
+            for (Word word : dictionary.wordArrayList) {
+                searcher.add(word.getWord_target());
+            }
+            return;
+        }
+        for (Word word : dictionary.wordArrayList) {
+            if (word.getWord_target().startsWith(x)) {
+                searcher.add(word.getWord_target());
             }
         }
-        return word;
     }
 
     /**
@@ -48,7 +48,7 @@ public class DictionaryCommandline extends DictionaryManagement {
      *
      * @return
      */
-    public static void dictionaryAdvanced(){
+    public static void dictionaryAdvanced() {
         boolean check = true;
         while (check == true) {
             System.out.println("Welcome to My Application!");
@@ -108,13 +108,13 @@ public class DictionaryCommandline extends DictionaryManagement {
                 System.out.println("Start Game: ");
                 int h = sc.nextInt();
                 sc.nextLine();
-                if(h==1){
+                if (h == 1) {
 
                 }
-                if(h==2){
+                if (h == 2) {
 
                 }
-                if(h==3){
+                if (h == 3) {
 
                 }
             }
@@ -124,12 +124,16 @@ public class DictionaryCommandline extends DictionaryManagement {
             }
             if (a == 9) {
                 System.out.println("Export to file: ");
-                DictionaryManagement.dictionaryExportToFile("dictionaryAdvanced.txt");
+                DictionaryManagement.dictionaryExportToFile();
             }
             if (a < 0 || a > 9) {
                 System.out.println("Action not supported");
             }
             sc.close();
         }
+    }
+
+    public static void main(String[] args) {
+        dictionaryAdvanced();
     }
 }

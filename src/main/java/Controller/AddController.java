@@ -19,12 +19,9 @@ public class AddController extends Controller {
     private TextField WordField;
     @FXML
     private TextField ExplainField;
-    @FXML
-    private AnchorPane AddanchorPane;
-
     public void AddOrUpdateWord(ActionEvent e) {
         Word x = new Word(WordField.getText(), ExplainField.getText());
-        Stage stage = (Stage) AddanchorPane.getScene().getWindow();
+        Stage stage = (Stage) AnchorPane.getScene().getWindow();
         if (WordField.getText().isEmpty() || ExplainField.getText().isEmpty()) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "ERROR");
             alert.getDialogPane().setHeaderText("Missing");
@@ -54,29 +51,8 @@ public class AddController extends Controller {
                 return;
             }
         }
-        DictionaryCommandline.dictionaryExportToFile("dictionaryAdvanced.txt");
+        DictionaryManagement.dictionaryExportToFile();
         WordField.setText("");
         ExplainField.setText("");
-    }
-
-    public void RemoveWord(ActionEvent e) {
-        if (WordField.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "ERROR");
-            alert.getDialogPane().setHeaderText("Missing");
-            alert.getDialogPane().setContentText("ERROR");
-            alert.showAndWait();
-            WordField.setText("");
-            ExplainField.setText("");
-            return;
-        }
-        Alert alert1 = new Alert(Alert.AlertType.CONFIRMATION);
-        alert1.initModality(Modality.APPLICATION_MODAL);
-        alert1.initOwner(stage);
-        alert1.getDialogPane().setHeaderText("REMOVE WORD");
-        alert1.getDialogPane().setContentText("This word already added, are you sure you want to update?");
-        Optional<ButtonType> optional = alert1.showAndWait();
-        if (optional.get() == ButtonType.OK) {
-            DictionaryManagement.delete(WordField.getText());
-        }
     }
 }

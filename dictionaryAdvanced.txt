@@ -1,7 +1,4 @@
-a few	ít, vài; một ít, một vài
-a little	văn chương, văn học
-ability	khả năng, năng lực
-able	có năng lực, có tài
+able	co le
 about	khoảng, về
 above	ở trên
 abroad	ở, ra nước ngoài, ngoài trời
@@ -14,7 +11,6 @@ abuse	lộng hành, lạm dụng
 academic	thuộc học viện, ĐH, viện hàn lâm
 accent	trọng âm, dấu trọng âm
 accept	chấp nhận, chấp thuận
-acceptable	có thể chấp nhận, chấp thuận
 access	lối, cửa, đường vào
 accident	tai nạn, rủi ro
 accidental	tình cờ, bất ngờ
@@ -112,9 +108,7 @@ artificial	nhân tạo
 artist	nghệ sĩ
 artistic	thuộc nghệ thuật, thuộc mỹ thuật
 as	thuộc nghệ thuật, thuộc mỹ thuật
-as soon as	sớm, chẳng bao lâu nữa
 as well as	tốt, giỏi; ôi, may quá!
-ashamed	ngượng, xấu hổ
 aside	về một bên, sang một bên
 asleep	ngủ, đang ngủ
 aspect	vẻ bề ngoài, diện mạo
@@ -150,6 +144,7 @@ aware	biết, nhận thức, nhận thức thấy
 away	xa, xa cách, rời xa, đi xa
 awful	oai nghiêm, dễ sợ
 awkward	vụng về, lung túng
+b	b
 back	vụng về, lung túng
 background	phía sau; nền
 backward	về phía sau, lùi lại
@@ -592,7 +587,7 @@ depress	làm chán nản, làm phiền muộn; làm suy giảm
 depth	chiều sâu, độ dày
 derive	nhận được từ, lấy được từ;
 description	sự mô tả, sự tả, sự miêu tả
-desert	sa mạc; công 
+desert	sa mạc; công
 deserve	đáng, xứng đáng
 design	sự thiết kế, kế hoạch, đề cương. phác thảo
 desire	ước muốn; thèm muốn, ao ước
@@ -1170,6 +1165,7 @@ hunting	sự đi săn
 hurry	sự vội vàng, sự gấp rút
 hurt	làm bị thương, gây thiệt hại
 husband	người chồng
+huy	A+
 ice	băng, nước đá
 idea	ý tưởng, quan niệm
 ideal	(thuộc) quan niệm, tư tưởng; lý tưởng
@@ -2973,4 +2969,4 @@ witness	sự làm chứng, bằng chứng; chứng kiến, làm chứng
 yours faithfully	trung thành, chung thủy, trung thực
 yours sincerely	một cách chân thành
 yours truly	đúng sự thật, đích thực, thực sự
-huy	huy
+a	a

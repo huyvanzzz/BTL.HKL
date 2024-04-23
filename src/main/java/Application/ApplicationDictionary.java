@@ -13,13 +13,12 @@ public class ApplicationDictionary extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/API.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/Main.fxml"));
             Parent root = loader.load();
             primaryStage.setTitle("Dictionary Application");
             primaryStage.setScene(new Scene(root));
             primaryStage.show();
         } catch (Exception e) {
-
             e.printStackTrace();
         }
     }
@@ -27,5 +26,6 @@ public class ApplicationDictionary extends Application {
     public static void main(String[] args) {
         DictionaryManagement.insertFromFile();
         launch(args);
+
     }
 }

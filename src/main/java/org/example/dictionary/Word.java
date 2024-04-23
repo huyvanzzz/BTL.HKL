@@ -2,7 +2,7 @@ package org.example.dictionary;
 
 public class Word {
     private String word_target;
-    public String word_explain;
+    private String word_explain;
 
     public Word() {
     }

@@ -6,42 +6,47 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import org.example.dictionary.TextToSpeech;
 import org.example.dictionary.TranslateAPI;
 
 public class ApiController extends Controller {
-    private String in = "en";
-    private String out = "vi";
-
-    private int inX = 150;
-    private int outX = 550;
-
-    @FXML
-    private TextArea TransIn, TransOut;
+    private String inputLanguage = "en";
+    private String outputLanguage = "vi";
+    private int inX = 80;
+    private int outX = 430;
 
     @FXML
-    private Label LangIn, LangOut;
+    private TextArea TransInput, TransOutput;
 
-    public void Sound(ActionEvent e) {
+    @FXML
+    private Label LabelIn, LabelOut;
 
+    public void sound(ActionEvent e) {
+        String word = TransInput.getText();
+        if (!word.isEmpty()) {
+            TextToSpeech.speak(word);
+        }
     }
 
-    public void translateWord(ActionEvent e) throws IOException {
-        String word = TransIn.getText();
-        String Trans = TranslateAPI.googleTranslate(in, out, word);
-        TransOut.setText(Trans);
-    }
-
-    public void swapTrans(ActionEvent e) {
-        String temp = in;
-        in = out;
-        out = temp;
-        TransIn.setText("");
-        TransOut.setText("");
-
-        int sw = inX;
+    public void swap(ActionEvent e) {
+        String x = inputLanguage;
+        inputLanguage = outputLanguage;
+        outputLanguage = x;
+        int coordinates = inX;
+        String a = TransInput.getText();
+        TransInput.setText(TransOutput.getText());
+        TransOutput.setText(a);
         inX = outX;
-        outX = sw;
-        LangIn.setLayoutX(inX);
-        LangOut.setLayoutX(outX);
+        outX = coordinates;
+        LabelIn.setLayoutX(inX);
+        LabelOut.setLayoutX(outX);
     }
+
+    public void translate(ActionEvent e) {
+        String word = TransInput.getText();
+        String translatedText = TranslateAPI.googleTranslate(inputLanguage, outputLanguage, word);
+        TransOutput.setText(translatedText);
+    }
+
+
 }
