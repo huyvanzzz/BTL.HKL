@@ -41,7 +41,7 @@ public class Dictionary extends Word {
         return Collections.binarySearch(
                 wordArrayList,
                 word,
-                new comparator()
+                new Compare()
         );
     }
 

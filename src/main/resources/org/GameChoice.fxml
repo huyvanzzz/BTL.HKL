@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="908.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ChoiceGameController">
+   <children>
+      <ImageView fitHeight="743.0" fitWidth="998.0" layoutX="-45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngtree-elegant-modern-blank-blue-gold-graduation-certificate-border-frame-vector-png-image_7122590.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="A" layoutX="187.0" layoutY="429.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="139.0" style="-fx-background-color: #C1FFB6;" stylesheets="@application.css" text="A" />
+      <Button fx:id="D" layoutX="563.0" layoutY="558.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="139.0" style="-fx-background-color: #f1c232;" stylesheets="@application.css" text="D" />
+      <Button fx:id="C" layoutX="190.0" layoutY="558.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="139.0" style="-fx-background-color: #FFB7DF;" stylesheets="@application.css" text="C" />
+      <Button fx:id="B" layoutX="562.0" layoutY="429.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="139.0" style="-fx-background-color: #CBDDFB;" stylesheets="@application.css" text="B" />
+      <Label fx:id="question" layoutX="129.0" layoutY="132.0" prefHeight="248.0" prefWidth="632.0" stylesheets="@application.css" text="Question">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -45,7 +45,7 @@ public abstract class Controller {
     }
     @FXML
     protected void switchToGameScene(ActionEvent e) throws IOException {
-        switchScene(e, "GameUI.fxml");
+        switchScene(e, "/org/Game.fxml");
     }
 
     protected void switchScene(ActionEvent e, String path) throws IOException {
@@ -60,7 +60,7 @@ public abstract class Controller {
     protected void Exit(ActionEvent e) {
 
         Alert.AlertType type = Alert.AlertType.CONFIRMATION;
-        Alert alert = new Alert(type, "");
+        Alert alert = new Alert(type);
         alert.initModality(Modality.APPLICATION_MODAL);
         alert.initOwner(stage);
 
@@ -71,7 +71,6 @@ public abstract class Controller {
         if (result.get() == ButtonType.OK) {
             Platform.exit();
             System.exit(0);
-        } else if (result.get() == ButtonType.CANCEL) {
         }
     }
 }

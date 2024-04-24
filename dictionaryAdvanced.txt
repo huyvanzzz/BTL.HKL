@@ -1,3 +1,4 @@
+a	a
 able	co le
 about	khoảng, về
 above	ở trên
@@ -1165,7 +1166,7 @@ hunting	sự đi săn
 hurry	sự vội vàng, sự gấp rút
 hurt	làm bị thương, gây thiệt hại
 husband	người chồng
-huy	A+
+huy	A++
 ice	băng, nước đá
 idea	ý tưởng, quan niệm
 ideal	(thuộc) quan niệm, tư tưởng; lý tưởng
@@ -2969,4 +2970,3 @@ witness	sự làm chứng, bằng chứng; chứng kiến, làm chứng
 yours faithfully	trung thành, chung thủy, trung thực
 yours sincerely	một cách chân thành
 yours truly	đúng sự thật, đích thực, thực sự
-a	a
