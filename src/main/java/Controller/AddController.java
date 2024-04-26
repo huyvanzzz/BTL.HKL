@@ -12,6 +12,8 @@ import org.example.dictionary.DictionaryCommandline;
 import org.example.dictionary.DictionaryManagement;
 import org.example.dictionary.Word;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 public class AddController extends Controller {

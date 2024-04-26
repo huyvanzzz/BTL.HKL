@@ -16,7 +16,7 @@ for/with/at/by
 in/on/at/with
 go/goes/going/went
 when/while/until/since
-more/smart/smarter/most/smartest
+more smart/smarter/most smart/smartest
 up/on/off/in
 in/on/at/during
 in/on/at/since

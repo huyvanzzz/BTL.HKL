@@ -104,7 +104,7 @@
                   <Insets left="10.0" />
                </padding>
             </Button>
-            <Button layoutX="14.0" layoutY="509.0" minWidth="45.0" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="45.0">
+            <Button layoutX="14.0" layoutY="509.0" minWidth="45.0" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="45.0" style="-fx-border-color: #000000;">
                <graphic>
                   <ImageView fitHeight="28.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -131,7 +131,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <TextField fx:id="WordField" layoutX="28.0" layoutY="132.0" prefHeight="48.0" prefWidth="615.0" promptText="Add Or Update Word :" style="-fx-border-color: #2FA3E4; -fx-background-radius: 30; -fx-border-radius: 30;" />
+            <TextField fx:id="WordField" layoutX="28.0" layoutY="132.0" prefHeight="48.0" prefWidth="615.0" promptText="Add Or Update Word :" style="-fx-border-color: #2FA3E4; -fx-background-radius: 30; -fx-border-radius: 30;" stylesheets="@application.css" />
             <ImageView fitHeight="124.0" fitWidth="158.0" layoutX="19.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Icon/vietnamese.png" />

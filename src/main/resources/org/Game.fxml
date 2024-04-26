@@ -102,7 +102,7 @@
                   <Insets left="10.0" />
                </padding>
             </Button>
-            <Button layoutX="14.0" layoutY="509.0" minWidth="45.0" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="45.0">
+            <Button layoutX="14.0" layoutY="509.0" minWidth="45.0" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="45.0" style="-fx-border-color: #000000;">
                <graphic>
                   <ImageView fitHeight="28.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -125,9 +125,12 @@
                   <Image url="@download.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="418.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="418.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@noi-chu-tieng-anh-2-200.png" />
+               </image></ImageView>
             <Button layoutX="142.0" layoutY="464.0" mnemonicParsing="false" onAction="#switchToChoiceGame" style="-fx-border-color: #000000;" stylesheets="@application.css" text="Choice" />
-            <Button layoutX="467.0" layoutY="469.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="436.0" layoutY="464.0" mnemonicParsing="false" onAction="#switchToConnectGame" style="-fx-border-color: #000000;" stylesheets="@application.css" text="Connet Word" />
          </children>
       </Pane>
    </children>

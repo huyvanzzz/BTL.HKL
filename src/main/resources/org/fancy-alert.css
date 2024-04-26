@@ -1,0 +1,4 @@
+.dialog-pane .alert .header-panel {
+    -fx-background-color: #2ecc71; /* Màu nền xanh lá cây */
+    -fx-text-fill: white; /* Màu chữ trắng */
+}

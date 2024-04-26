@@ -1,5 +1,7 @@
 package Controller;
 
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import org.example.dictionary.Dictionary;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -16,6 +18,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.example.dictionary.DictionaryCommandline;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Optional;
 
@@ -28,6 +31,10 @@ public abstract class Controller {
     protected Stage stage;
     protected Scene scene;
     protected Parent root;
+    protected static final String musicFile = "pokemon.mp3";
+    protected MediaPlayer mediaPlayer;
+    protected int point = 0;
+    protected int times = 3;
 
     @FXML
     protected void switchToSearchScene(ActionEvent e) throws IOException {
@@ -43,6 +50,7 @@ public abstract class Controller {
     protected void switchToOperationScene(ActionEvent e) throws IOException {
         switchScene(e, "/org/AddWord.fxml");
     }
+
     @FXML
     protected void switchToGameScene(ActionEvent e) throws IOException {
         switchScene(e, "/org/Game.fxml");
@@ -57,7 +65,7 @@ public abstract class Controller {
     }
 
     @FXML
-    protected void Exit(ActionEvent e) {
+    protected void Exit(ActionEvent e) throws IOException {
 
         Alert.AlertType type = Alert.AlertType.CONFIRMATION;
         Alert alert = new Alert(type);
@@ -72,5 +80,11 @@ public abstract class Controller {
             Platform.exit();
             System.exit(0);
         }
+    }
+
+    protected void SoundChill() {
+        Media sound = new Media(new File(musicFile).toURI().toString());
+        mediaPlayer = new MediaPlayer(sound);
+        mediaPlayer.play();
     }
 }

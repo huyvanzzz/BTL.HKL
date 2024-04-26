@@ -11,6 +11,7 @@ module org.example.dictionary {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires jsapi;
+    requires javafx.media;
 
     opens org.example.dictionary to javafx.fxml;
     exports org.example.dictionary;

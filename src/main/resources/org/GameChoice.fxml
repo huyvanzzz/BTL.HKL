@@ -5,6 +5,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="908.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ChoiceGameController">
@@ -14,14 +15,64 @@
             <Image url="@pngtree-elegant-modern-blank-blue-gold-graduation-certificate-border-frame-vector-png-image_7122590.png" />
          </image>
       </ImageView>
-      <Button fx:id="A" layoutX="187.0" layoutY="429.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="139.0" style="-fx-background-color: #C1FFB6;" stylesheets="@application.css" text="A" />
-      <Button fx:id="D" layoutX="563.0" layoutY="558.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="139.0" style="-fx-background-color: #f1c232;" stylesheets="@application.css" text="D" />
-      <Button fx:id="C" layoutX="190.0" layoutY="558.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="139.0" style="-fx-background-color: #FFB7DF;" stylesheets="@application.css" text="C" />
-      <Button fx:id="B" layoutX="562.0" layoutY="429.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="139.0" style="-fx-background-color: #CBDDFB;" stylesheets="@application.css" text="B" />
-      <Label fx:id="question" layoutX="129.0" layoutY="132.0" prefHeight="248.0" prefWidth="632.0" stylesheets="@application.css" text="Question">
+      <Button fx:id="A" layoutX="187.0" layoutY="429.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="66.0" prefWidth="139.0" style="-fx-border-color: #000000;" stylesheets="@application.css" text="A" />
+      <Button fx:id="D" layoutX="563.0" layoutY="558.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="66.0" prefWidth="139.0" style="-fx-border-color: #000000;" stylesheets="@application.css" text="D" />
+      <Button fx:id="C" layoutX="190.0" layoutY="558.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="66.0" prefWidth="139.0" style="-fx-border-color: #000000;" stylesheets="@application.css" text="C" />
+      <Button fx:id="B" layoutX="562.0" layoutY="429.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="66.0" prefWidth="139.0" style="-fx-border-color: #000000;" stylesheets="@application.css" text="B" />
+      <Label fx:id="question" alignment="TOP_LEFT" layoutX="182.0" layoutY="226.0" prefHeight="202.0" prefWidth="522.0" stylesheets="@application.css" text="Question" wrapText="true">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
+      <Button layoutX="761.0" layoutY="137.0" mnemonicParsing="false" onAction="#refresh" prefHeight="46.0" prefWidth="46.0">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icon/Goto.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane fx:id="paneAlert" layoutX="209.0" layoutY="161.0" prefHeight="302.0" prefWidth="467.0">
+         <children>
+            <ImageView fitHeight="318.0" fitWidth="473.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagesa.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="179.0" layoutY="35.0" prefHeight="55.0" prefWidth="119.0" stylesheets="@application.css" text="Game over">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="102.0" layoutY="213.0" mnemonicParsing="false" onAction="#switchToGameScene" prefHeight="47.0" prefWidth="78.0" style="-fx-border-color: #000000;" stylesheets="@application.css" text="Reset" />
+            <Button layoutX="298.0" layoutY="213.0" mnemonicParsing="false" onAction="#Exit" prefHeight="47.0" prefWidth="78.0" style="-fx-border-color: #000000;" stylesheets="@application.css" text="Exit" />
+            <Label layoutX="102.0" layoutY="90.0" prefHeight="55.0" prefWidth="258.0" stylesheets="@application.css" text="Do you want to play again?">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="label2" layoutX="121.0" layoutY="145.0" prefHeight="47.0" prefWidth="221.0" stylesheets="@application.css" />
+         </children>
+      </Pane>
+      <Label fx:id="label" layoutX="564.0" layoutY="68.0" prefHeight="47.0" prefWidth="78.0" stylesheets="@application.css">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="189.0" layoutY="64.0" prefHeight="55.0" prefWidth="139.0" stylesheets="@application.css">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="39.0" layoutY="568.0" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="43.0">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icon/Exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

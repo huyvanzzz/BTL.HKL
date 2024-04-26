@@ -104,7 +104,7 @@
                   <Insets left="10.0" />
                </padding>
             </Button>
-            <Button layoutX="14.0" layoutY="509.0" minWidth="45.0" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="45.0">
+            <Button layoutX="14.0" layoutY="509.0" minWidth="45.0" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="45.0" style="-fx-border-color: #000000;">
                <graphic>
                   <ImageView fitHeight="28.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                      <image>

@@ -13,7 +13,7 @@ public class ApplicationDictionary extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/Main.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/GameChoice.fxml"));
             Parent root = loader.load();
             primaryStage.setTitle("Dictionary Application");
             primaryStage.setScene(new Scene(root));
