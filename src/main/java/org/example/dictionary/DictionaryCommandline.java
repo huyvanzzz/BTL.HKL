@@ -14,7 +14,7 @@ public class DictionaryCommandline extends DictionaryManagement {
     }
 
     public static ObservableList<String> searchWordsWithPrefix(String prefix) {
-        return trie.autoComplete(prefix);
+        return trie.autoSearch(prefix);
     }
 
     /**

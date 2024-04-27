@@ -52,7 +52,7 @@ public class Trie {
     }
 
     // Phương thức tìm kiếm các từ có tiền tố là prefix
-    public ObservableList<String> autoComplete(String prefix) {
+    public ObservableList<String> autoSearch(String prefix) {
         Trie currentNode = this;
         for (char c : prefix.toCharArray()) {
             if (!currentNode.children.containsKey(c)) {
