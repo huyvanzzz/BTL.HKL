@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d11b8a22-21a9-4d10-a51b-6d32990db35f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/Trie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictionaryAdvanced.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionaryAdvanced.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/ApplicationDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/ApplicationDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/AddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ChoiceGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ChoiceGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ConnectWordGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ConnectWordGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryCommandline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryCommandline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/DictionaryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dictionary/TextToSpeech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dictionary/TextToSpeech.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/API.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/API.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/AddWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/AddWord.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/Game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/GameConnect.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/GameConnect.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
