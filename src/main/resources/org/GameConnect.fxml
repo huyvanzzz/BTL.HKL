@@ -6,6 +6,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="908.0" style="-fx-background-color: #ffb6c1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ConnectWordGameController">
@@ -30,6 +31,41 @@
             <ImageView fitHeight="40.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="A" layoutX="135.0" layoutY="31.0" prefHeight="46.0" prefWidth="170.0" stylesheets="@application.css">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="B" layoutX="632.0" layoutY="31.0" prefHeight="46.0" prefWidth="86.0" stylesheets="@application.css">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Pane fx:id="paneAlert" layoutX="219.0" layoutY="171.0" prefHeight="302.0" prefWidth="467.0" style="-fx-background-color: #AFEEEE;">
+         <children>
+            <Label alignment="CENTER" layoutX="179.0" layoutY="35.0" prefHeight="55.0" prefWidth="119.0" stylesheets="@application.css" text="Game over">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="102.0" layoutY="213.0" mnemonicParsing="false" onAction="#switchToGameScene" prefHeight="47.0" prefWidth="78.0" style="-fx-border-color: #000000;" stylesheets="@application.css" text="Reset" />
+            <Button layoutX="298.0" layoutY="213.0" mnemonicParsing="false" onAction="#Exit" prefHeight="47.0" prefWidth="78.0" style="-fx-border-color: #000000;" stylesheets="@application.css" text="Exit" />
+            <Label layoutX="102.0" layoutY="90.0" prefHeight="55.0" prefWidth="258.0" stylesheets="@application.css" text="Do you want to play again?">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="label2" layoutX="121.0" layoutY="145.0" prefHeight="47.0" prefWidth="221.0" stylesheets="@application.css" />
+         </children>
+      </Pane>
+      <Label fx:id="label1" layoutX="135.0" layoutY="542.0" prefHeight="46.0" prefWidth="203.0" stylesheets="@application.css" />
+      <Button layoutX="809.0" layoutY="612.0" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="43.0">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="38.0" onDragDetected="#Exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icon/Exit.png" />
                </image>
             </ImageView>
          </graphic>

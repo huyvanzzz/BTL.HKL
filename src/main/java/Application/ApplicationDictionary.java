@@ -7,13 +7,16 @@ import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import org.example.dictionary.DictionaryManagement;
+import org.example.dictionary.TextToSpeech;
+
+import java.io.IOException;
 
 
 public class ApplicationDictionary extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/GameChoice.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/Main.fxml"));
             Parent root = loader.load();
             primaryStage.setTitle("Dictionary Application");
             primaryStage.setScene(new Scene(root));
@@ -21,11 +24,14 @@ public class ApplicationDictionary extends Application {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 
     public static void main(String[] args) {
         DictionaryManagement.insertFromFile();
+        DictionaryManagement.addWordToTrie();
         launch(args);
-
+        TextToSpeech.shutDown();
+        DictionaryManagement.dictionary.wordArrayList.clear();
     }
 }

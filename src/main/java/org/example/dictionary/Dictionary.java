@@ -14,7 +14,6 @@ import java.util.Scanner;
 public class Dictionary extends Word {
     public ArrayList<Word> wordArrayList = new ArrayList<>();
     public static Dictionary dictionary = new Dictionary();
-    public static List<String> searcher ;
     public static final String fileName = "dictionaryAdvanced.txt";
     public static final String tab = "\t";
 
@@ -22,7 +21,7 @@ public class Dictionary extends Word {
         return dictionary;
     }
 
-    public void addWord(){
+    public void addWord() {
         try {
             FileReader fileReader = new FileReader(fileName);
             Scanner sc = new Scanner(fileReader);
@@ -37,6 +36,7 @@ public class Dictionary extends Word {
             e.printStackTrace();
         }
     }
+
     public int findWord(Word word) {
         return Collections.binarySearch(
                 wordArrayList,

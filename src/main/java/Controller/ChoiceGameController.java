@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
 import org.example.dictionary.ChooseTheRightWordGame;
 
 import java.io.File;
@@ -56,6 +57,7 @@ public class ChoiceGameController extends Controller implements Initializable {
         question.setText(question1.get(a));
         answer = ans.get(a);
     }
+
     @FXML
     void handleButtonClick(ActionEvent event) {
         Button clickedButton = (Button) event.getSource();
@@ -65,8 +67,8 @@ public class ChoiceGameController extends Controller implements Initializable {
         if (buttonText.equals(answer)) {
             setCorrectButtonStyle(clickedButton);
             clickedButton.setStyle(((Button) event.getSource()).getStyle());
-            point +=100;
-            label1.setText("Point: "+point);
+            point += 100;
+            label1.setText("Point: " + point);
             mediaPlayer.stop();
         } else {
             times--;
@@ -76,11 +78,11 @@ public class ChoiceGameController extends Controller implements Initializable {
             addCorrectAnswerButton(B);
             addCorrectAnswerButton(C);
             addCorrectAnswerButton(D);
-            label1.setText("Point: "+point);
+            label1.setText("Point: " + point);
             mediaPlayer.stop();
-            if (times == 0){
+            if (times == 0) {
                 paneAlert.setVisible(true);
-                label2.setText("LastPoint: "+point);
+                label2.setText("LastPoint: " + point);
             }
         }
     }
@@ -91,6 +93,7 @@ public class ChoiceGameController extends Controller implements Initializable {
         C.setStyle("-fx-border-color: black;");
         D.setStyle("-fx-border-color: black;");
     }
+
     // Đặt kiểu cho nút khi chọn đáp án đúng
     public void setCorrectButtonStyle(Button button) {
         button.setStyle("-fx-background-color: green;");
@@ -106,11 +109,13 @@ public class ChoiceGameController extends Controller implements Initializable {
             x.setStyle("-fx-background-color: green;");
         }
     }
-    public boolean check(Button a){
+
+    public boolean check(Button a) {
         return a.getStyle().contains("-fx-background-color: green;");
     }
+
     public void refresh() {
-        if (times >= 0 && (check(A)||check(B)||check(C)||check(D))) {
+        if (times >= 0 && (check(A) || check(B) || check(C) || check(D))) {
             label.setText("Times:" + times);
             setABCD();
             setColor();
@@ -120,7 +125,7 @@ public class ChoiceGameController extends Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        label1.setText("Point: "+point);
+        label1.setText("Point: " + point);
         label.setText("Times: " + times);
         paneAlert.setVisible(false);
         setABCD();
@@ -132,15 +137,16 @@ public class ChoiceGameController extends Controller implements Initializable {
             addCorrectAnswerButton(D);
         });
     }
+
     @Override
-    protected void Exit(ActionEvent e) throws IOException{
-        super.switchScene(e,"/org/Game.fxml");
+    protected void Exit(ActionEvent e) throws IOException {
+        super.switchScene(e, "/org/Game.fxml");
         mediaPlayer.stop();
     }
 
     @Override
     protected void switchToGameScene(ActionEvent e) throws IOException {
-        super.switchScene(e,"/org/GameChoice.fxml");
+        super.switchScene(e, "/org/GameChoice.fxml");
     }
 }
 

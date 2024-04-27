@@ -11,6 +11,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class DictionaryManagement extends Dictionary {
+    protected static Trie trie = new Trie();
     public static void sortList() {
         dictionary.wordArrayList.sort(new Comparator<Word>() {
             @Override
@@ -38,10 +39,18 @@ public class DictionaryManagement extends Dictionary {
 
     public static void insertFromFile() {
         dictionary.addWord();
+    }
 
+    public static void addWordToTrie() {
+        for (Word word : dictionary.wordArrayList) {
+            trie.insert(word.getWord_target());
+        }
     }
 
     public static boolean dictionaryLookup(String vocabulary) {
+        if (vocabulary == null) {
+            return false;
+        }
         for (Word word : dictionary.wordArrayList) {
             if (vocabulary.equalsIgnoreCase(word.getWord_target())) {
                 return true;
@@ -52,17 +61,20 @@ public class DictionaryManagement extends Dictionary {
 
     public static void addword(Word a) {
         dictionary.wordArrayList.add(a);
+        trie.insert(a.getWord_target());
     }
 
     public static void fix(Word a) {
         int index = dictionary.findWord(new Word(a.getWord_target().toLowerCase(), null));
         dictionary.wordArrayList.remove(index);
         dictionary.wordArrayList.add(a);
+        trie.insert(a.getWord_target());
     }
 
     public static void delete(String a) {
         int index = dictionary.findWord(new Word(a.toLowerCase(), null));
         dictionary.wordArrayList.remove(index);
+        trie.delete(a);
     }
 
     public static void dictionaryExportToFile() {

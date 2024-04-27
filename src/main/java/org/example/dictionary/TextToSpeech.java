@@ -25,7 +25,6 @@ public class TextToSpeech {
                         "freetts.voices",
                         "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory"
                 );
-
                 Central.registerEngineCentral("com.sun.speech.freetts.jsapi.FreeTTSEngineCentral");
 
                 speakPlainText = Central.createSynthesizer(new SynthesizerModeDesc(Locale.US));
@@ -40,7 +39,6 @@ public class TextToSpeech {
             }
         });
     }
-
 
     public static void shutDown() {
         deallocate();

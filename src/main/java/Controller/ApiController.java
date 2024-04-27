@@ -27,7 +27,6 @@ public class ApiController extends Controller {
             TextToSpeech.speak(word);
         }
     }
-
     public void swap(ActionEvent e) {
         String x = inputLanguage;
         inputLanguage = outputLanguage;

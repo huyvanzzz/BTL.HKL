@@ -5,15 +5,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import org.example.dictionary.DictionaryCommandline;
 import org.example.dictionary.DictionaryManagement;
 import org.example.dictionary.Word;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 public class AddController extends Controller {
@@ -21,6 +17,7 @@ public class AddController extends Controller {
     private TextField WordField;
     @FXML
     private TextField ExplainField;
+
     public void AddOrUpdateWord(ActionEvent e) {
         Word x = new Word(WordField.getText(), ExplainField.getText());
         Stage stage = (Stage) AnchorPane.getScene().getWindow();
@@ -36,21 +33,17 @@ public class AddController extends Controller {
         alert1.initOwner(stage);// cửa sổ thông báo sẽ được hiển thị trên cửa sổ gốc này và sẽ nằm trên đỉnh khi hiển thị
         if (DictionaryManagement.dictionaryLookup(WordField.getText())) {
             alert1.getDialogPane().setHeaderText("UPDATE WORD");
-            alert1.getDialogPane().setContentText("This word already added, are you sure you want to update?");
+            alert1.getDialogPane().setContentText("What is your choice??");
             Optional<ButtonType> optional = alert1.showAndWait();
             if (optional.get() == ButtonType.OK) {
                 DictionaryManagement.fix(x);
-            } else {
-                return;
             }
         } else {
             alert1.getDialogPane().setHeaderText("ADD WORD");
-            alert1.getDialogPane().setContentText("Are you sure you want to add?");
+            alert1.getDialogPane().setContentText("What is your choice??");
             Optional<ButtonType> optional = alert1.showAndWait();
             if (optional.get() == ButtonType.OK) {
                 DictionaryManagement.addword(x);
-            } else {
-                return;
             }
         }
         DictionaryManagement.dictionaryExportToFile();

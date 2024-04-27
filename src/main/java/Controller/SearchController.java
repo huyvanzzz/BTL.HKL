@@ -13,29 +13,29 @@ import org.example.dictionary.*;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class SearchController extends Controller implements Initializable {
-    String current;
+    private String current = "";
     @FXML
     private Label word, explain;
     @FXML
     private TextField searchField;
-    private final ObservableList<String> searchResult = FXCollections.observableArrayList();
+    private ObservableList<String> searchResult = FXCollections.observableArrayList();
 
     public void updateList() {
         searchField.setOnKeyReleased(event -> {
             String keyword = searchField.getText().toLowerCase();
-
             // Tạo danh sách mới để lưu trữ kết quả tìm kiếm
-            ObservableList<String> searchResult = FXCollections.observableArrayList();
-            DictionaryCommandline.dictionarySearcher(keyword);
-            searchResult.addAll(Dictionary.searcher);
+            searchResult = DictionaryCommandline.searchWordsWithPrefix(keyword);
+            Collections.sort(searchResult);
             // Hiển thị kết quả tìm kiếm trên ListView
             listView.setItems(searchResult);
         });
     }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         DictionaryManagement.sortList();
@@ -45,28 +45,28 @@ public class SearchController extends Controller implements Initializable {
         listView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-
-                current = listView.getSelectionModel().getSelectedItem();
-                word.setText(current);
-                for (Word word1 : Dictionary.dictionary.wordArrayList) {
-                    if (current.equals(word1.getWord_target())) {
-                        explain.setText(word1.getWord_explain());
-                        break;
+                if (newValue != null) {
+                    current = newValue;
+                    word.setText(current);
+                    for (Word word1 : Dictionary.dictionary.wordArrayList) {
+                        if (current.equals(word1.getWord_target())) {
+                            explain.setText(word1.getWord_explain());
+                            break;
+                        }
                     }
                 }
             }
         });
         updateList();
     }
-
     public void RemoveWord(ActionEvent e) {
-        if (word.getText().isEmpty()) {
+        if (searchField.getText().isEmpty() && word.getText().equals("Word")) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "ERROR");
             alert.getDialogPane().setHeaderText("Missing");
             alert.getDialogPane().setContentText("ERROR");
             alert.showAndWait();
-            word.setText("");
-            explain.setText("");
+            word.setText("Word");
+            explain.setText("Explain");
             return;
         }
         Alert alert1 = new Alert(Alert.AlertType.CONFIRMATION);
@@ -78,8 +78,8 @@ public class SearchController extends Controller implements Initializable {
         if (optional.get() == ButtonType.OK) {
             DictionaryManagement.delete(word.getText());
             DictionaryManagement.dictionaryExportToFile();
-            word.setText("");
-            explain.setText("");
+            word.setText("Word");
+            explain.setText("Explain");
             int selectedID = listView.getSelectionModel().getSelectedIndex();
             listView.getItems().remove(selectedID);
         }

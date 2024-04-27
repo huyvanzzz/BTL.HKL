@@ -1,5 +1,7 @@
 package org.example.dictionary;
 
+import javafx.collections.ObservableList;
+
 import java.util.*;
 
 public class DictionaryCommandline extends DictionaryManagement {
@@ -11,24 +13,8 @@ public class DictionaryCommandline extends DictionaryManagement {
         }
     }
 
-    public static void dictionaryBasic() {
-        insertFromCommandline();
-        showAllWords();
-    }
-
-    public static void dictionarySearcher(String x) {
-        searcher = new ArrayList<>();
-        if (x.isEmpty()) {
-            for (Word word : dictionary.wordArrayList) {
-                searcher.add(word.getWord_target());
-            }
-            return;
-        }
-        for (Word word : dictionary.wordArrayList) {
-            if (word.getWord_target().startsWith(x)) {
-                searcher.add(word.getWord_target());
-            }
-        }
+    public static ObservableList<String> searchWordsWithPrefix(String prefix) {
+        return trie.autoComplete(prefix);
     }
 
     /**
@@ -102,7 +88,7 @@ public class DictionaryCommandline extends DictionaryManagement {
             if (a == 6) {
                 System.out.println("Search: ");
                 x = sc.nextLine();
-                DictionaryCommandline.dictionarySearcher(x);
+                DictionaryCommandline.searchWordsWithPrefix(x);
             }
             if (a == 7) {
                 System.out.println("Start Game: ");
