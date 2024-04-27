@@ -28,11 +28,16 @@ public class SearchController extends Controller implements Initializable {
     public void updateList() {
         searchField.setOnKeyReleased(event -> {
             String keyword = searchField.getText().toLowerCase();
+            if (searchResult == null) {
+                searchResult = FXCollections.observableArrayList();
+            }
+            searchResult.clear();
             // Tạo danh sách mới để lưu trữ kết quả tìm kiếm
             searchResult = DictionaryCommandline.searchWordsWithPrefix(keyword);
+            if(searchResult !=null){
             Collections.sort(searchResult);
             // Hiển thị kết quả tìm kiếm trên ListView
-            listView.setItems(searchResult);
+            listView.setItems(searchResult);}
         });
     }
 
@@ -59,6 +64,7 @@ public class SearchController extends Controller implements Initializable {
         });
         updateList();
     }
+
     public void RemoveWord(ActionEvent e) {
         if (searchField.getText().isEmpty() && word.getText().equals("Word")) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "ERROR");
