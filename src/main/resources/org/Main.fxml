@@ -117,7 +117,7 @@
                <children>
                   <Pane layoutY="236.0" prefHeight="240.0" prefWidth="401.0">
                      <children>
-                        <Label fx:id="explain" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="209.0" prefWidth="315.0" stylesheets="@application.css" text="Explain" />
+                        <Label fx:id="explain" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="209.0" prefWidth="315.0" stylesheets="@application.css" text="Explain" wrapText="true" />
                         <Button layoutX="333.0" layoutY="183.0" mnemonicParsing="false" onAction="#RemoveWord" prefHeight="40.0" prefWidth="37.0">
                            <graphic>
                               <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
@@ -131,7 +131,7 @@
                   </Pane>
                   <Pane prefHeight="240.0" prefWidth="401.0" style="-fx-border-color: #2FA3E4;">
                      <children>
-                        <Label fx:id="word" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="209.0" prefWidth="315.0" stylesheets="@application.css" text="Word" />
+                        <Label fx:id="word" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="209.0" prefWidth="315.0" stylesheets="@application.css" text="Word" wrapText="true" />
                         <Button layoutX="335.0" layoutY="14.0" mnemonicParsing="false" onAction="#sound" prefHeight="40.0" prefWidth="26.0">
                            <graphic>
                               <ImageView fitHeight="37.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">

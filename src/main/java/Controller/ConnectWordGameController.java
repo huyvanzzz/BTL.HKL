@@ -45,20 +45,27 @@ public class ConnectWordGameController extends Controller implements Initializab
     public void hints(ActionEvent e) {
         String x = label.getText();
         searchResult = DictionaryCommandline.searchWordsWithPrefix(x);
-        if (point == 0) {
+        if (point < 200) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "ERROR");
             alert.getDialogPane().setHeaderText("Missing");
             alert.getDialogPane().setContentText("ERROR");
             alert.showAndWait();
             return;
         }
-        if (point >= 100 && !searchResult.isEmpty() && !label1.isVisible()) {
+        if (point >= 200 && !searchResult.isEmpty() && !label1.isVisible()) {
             label1.setVisible(true);
             Random random = new Random();
+            int randomNumber;
+            if(label.getText().equalsIgnoreCase('z'+"")){
+                randomNumber = random.nextInt(10);
+            }
             // Sinh một số ngẫu nhiên trong phạm vi từ min đến max
-            int randomNumber = random.nextInt(2) ;
+            else {
+                randomNumber = random.nextInt(15) ;
+            }
             label1.setText(searchResult.get(randomNumber));
-            point -= 100;
+            point -= 200;
+            A.setText("Point: " + point);
         }
 
     }
@@ -80,7 +87,6 @@ public class ConnectWordGameController extends Controller implements Initializab
     }
 
     private boolean check(String a) {
-        DictionaryCommandline.insertFromFile();
         return DictionaryCommandline.dictionaryLookup(a);
     }
 

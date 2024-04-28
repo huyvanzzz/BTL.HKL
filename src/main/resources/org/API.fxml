@@ -102,12 +102,12 @@
       </Pane>
       <Pane layoutX="223.0" layoutY="89.0" prefHeight="563.0" prefWidth="670.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 30; -fx-background-radius: 30;">
          <children>
-            <TextArea fx:id="TransOutput" layoutX="364.0" layoutY="130.0" prefHeight="368.0" prefWidth="292.0" promptText="Trans:">
+            <TextArea fx:id="TransOutput" layoutX="364.0" layoutY="130.0" prefHeight="368.0" prefWidth="292.0" promptText="Trans:" wrapText="true">
                <font>
                   <Font size="24.0" />
                </font>
             </TextArea>
-            <TextArea fx:id="TransInput" layoutX="14.0" layoutY="130.0" prefHeight="368.0" prefWidth="292.0" promptText="Text:" style="-fx-border-radius: 25;">
+            <TextArea fx:id="TransInput" layoutX="14.0" layoutY="130.0" prefHeight="368.0" prefWidth="292.0" promptText="Text:" style="-fx-border-radius: 25;" wrapText="true">
                <font>
                   <Font size="24.0" />
                </font>
