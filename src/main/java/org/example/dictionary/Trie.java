@@ -2,7 +2,6 @@ package org.example.dictionary;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -22,18 +21,18 @@ public class Trie {
     // Constructor với tham số value
     private Trie(String value) {
         this.value = value;
-        children = new HashMap<Character, Trie>();
+        children = new HashMap<>();
     }
 
     // Phương thức thêm một nút con
     private void addChild(char character) {
         String str;
         if (this.value == null) {
-            str = Character.toString(character);
+            str = Character.toString(Character.toLowerCase(character));
         } else {
-            str = this.value + Character.toString(character);
+            str = this.value + Character.toString(Character.toLowerCase(character));
         }
-        children.put(character, new Trie(str));
+        children.put(Character.toLowerCase(character), new Trie(str));
     }
 
     // Phương thức chèn một từ vào Trie
@@ -43,10 +42,11 @@ public class Trie {
         }
         Trie currentNode = this;
         for (char c : wordToInsert.toCharArray()) {
-            if (!currentNode.children.containsKey(c)) {
-                currentNode.addChild(c);
+            char lowerCaseChar = Character.toLowerCase(c);
+            if (!currentNode.children.containsKey(lowerCaseChar)) {
+                currentNode.addChild(lowerCaseChar);
             }
-            currentNode = currentNode.children.get(c);
+            currentNode = currentNode.children.get(lowerCaseChar);
         }
         currentNode.isAdded = true;
     }
@@ -55,10 +55,11 @@ public class Trie {
     public ObservableList<String> autoSearch(String prefix) {
         Trie currentNode = this;
         for (char c : prefix.toCharArray()) {
-            if (!currentNode.children.containsKey(c)) {
+            char lowerCaseChar = Character.toLowerCase(c);
+            if (!currentNode.children.containsKey(lowerCaseChar)) {
                 return null;
             }
-            currentNode = currentNode.children.get(c);
+            currentNode = currentNode.children.get(lowerCaseChar);
         }
         return currentNode.getAllWords();
     }
@@ -81,10 +82,11 @@ public class Trie {
     public void delete(String wordToDelete) {
         Trie currentNode = this;
         for (char c : wordToDelete.toCharArray()) {
-            if (!currentNode.children.containsKey(c)) {
+            char lowerCaseChar = Character.toLowerCase(c);
+            if (!currentNode.children.containsKey(lowerCaseChar)) {
                 return;
             }
-            currentNode = currentNode.children.get(c);
+            currentNode = currentNode.children.get(lowerCaseChar);
         }
         currentNode.isAdded = false;
     }

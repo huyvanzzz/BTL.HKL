@@ -74,7 +74,7 @@ public class DictionaryCommandline extends DictionaryManagement {
                 x = sc.nextLine();
                 y = sc.nextLine();
                 Word word = new Word(x, y);
-                DictionaryManagement.fix(word);
+                DictionaryManagement.fix(x,y);
             }
             if (a == 4) {
                 System.out.println("Display ListWord: ");
@@ -94,15 +94,6 @@ public class DictionaryCommandline extends DictionaryManagement {
                 System.out.println("Start Game: ");
                 int h = sc.nextInt();
                 sc.nextLine();
-                if (h == 1) {
-
-                }
-                if (h == 2) {
-
-                }
-                if (h == 3) {
-
-                }
             }
             if (a == 8) {
                 System.out.println("Import from file: ");

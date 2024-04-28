@@ -60,21 +60,28 @@ public class DictionaryManagement extends Dictionary {
     }
 
     public static void addword(Word a) {
+        a.setWord_target(a.getWord_target().toLowerCase());
         dictionary.wordArrayList.add(a);
         trie.insert(a.getWord_target());
     }
 
-    public static void fix(Word a) {
-        int index = dictionary.findWord(new Word(a.getWord_target().toLowerCase(), null));
-        dictionary.wordArrayList.remove(index);
-        dictionary.wordArrayList.add(a);
-        trie.insert(a.getWord_target());
+    public static void fix(String wordTarget, String wordExplain) {
+        Word newWord = new Word(wordTarget.toLowerCase(), wordExplain);
+        int index = dictionary.findWord(newWord);
+        if (index >= 0) {
+            dictionary.wordArrayList.set(index, newWord);
+        } else {
+            System.out.println("Từ cần sửa không tồn tại trong từ điển.");
+        }
     }
-
     public static void delete(String a) {
         int index = dictionary.findWord(new Word(a.toLowerCase(), null));
-        dictionary.wordArrayList.remove(index);
-        trie.delete(a);
+        if (index >= 0) {
+            dictionary.wordArrayList.remove(index);
+            trie.delete(a);
+        } else {
+            System.out.println("Từ không tồn tại trong từ điển.");
+        }
     }
 
     public static void dictionaryExportToFile() {

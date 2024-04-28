@@ -36,7 +36,7 @@ public class AddController extends Controller {
             alert1.getDialogPane().setContentText("What is your choice??");
             Optional<ButtonType> optional = alert1.showAndWait();
             if (optional.get() == ButtonType.OK) {
-                DictionaryManagement.fix(x);
+                DictionaryManagement.fix(WordField.getText(),ExplainField.getText());
             }
         } else {
             alert1.getDialogPane().setHeaderText("ADD WORD");
