@@ -1,3 +1,4 @@
+a	A
 able	co le
 about	khoảng, về
 above	ở trên
@@ -185,7 +186,6 @@ before	rượu bia
 begin	bắt đầu, khởi đầu
 behalf	sự thay mặt
 behave	đối xử, ăn ở, cư xử
-behaviour	cách đối xử, cách ăn ở,tư cách đạo đức
 behind	sau, ở đằng sau
 believe	tin, tin tưởng
 bell	cái chuông, tiếng chuông
@@ -2932,13 +2932,13 @@ whatever	ướt, ẩm ướt
 wheel	bánh xe
 whenever	bất cứ lúc nào, lúc nào
 whereas	nhưng ngược lại, trong khi
-wherever	ở bất cứ nơi nào, ở bất cứ nơi đâu
-whether	có..không; có... chăng; không biết có.. không
+wherever	ở bất cứ nơi nào, ở bất cứ nơi đâu   
+whether	có..không; có... chăng; không biết có.. không   
 while	trong lúc, trong khi; lúc, chốc, lát
-whilst	trong lúc, trong khi
+whilst	trong lúc, trong khi   
 whisper	nói thì thầm, xì xào; tiếng nói thì thầm, tiếng xì xào
 whistle	sự huýt sáo, sự thổi còi; huýt sáo, thổi còi
-white	trắng; màu trắng
+white	trắng; màu trắng   
 whoever	sự huýt sáo, sự thổi còi; huýt sáo, thổi còi
 whole	bình an vô sự, không suy suyển, không hư hỏng; toàn bộ, tất cả, toàn thể
 whose	trắng; màu trắng
@@ -2967,8 +2967,98 @@ withdraw	rút, rút khỏi, rút lui
 within	trong vong thời gian, trong khoảng thời gian
 without	không, không có
 witness	sự làm chứng, bằng chứng; chứng kiến, làm chứng
+wood	gỗ
+wooden	làm bằng gỗ   
+wool	len
+worship	sự tôn thờ, sự tôn sùng; thờ, thờ phụng, tôn thờ   
+written	viết ra, được thảo ra   
+wrongly	một cách bất công, không đúng   
+Yabby	một loại tôm nước ngọt sống dưới đáy sông.
+yacht	thuyền buồm
+Yachtlike	giống như một chiếc du thuyền
+Yachtman	người lái du thuyền.
+Yachtswoman	Yachtswoman
+Yack away	nói chuyện không ngớt
+yang	dương
+yardmaster	chủ sân
+Yare	nhanh nhẹn, cử chỉ nhanh
+Yawn	ngáp
+yawningly	ngáp
+yawns	ngáp
+Yea	đúng
+yearbook	niên giám
+yearly	hằng năm
+Yearn	mong muốn mãnh liệt
+yearningly	khao khát
+yearnings	khao khát
+years	thời gian dài, lâu năm
+Yeast	một loại nấm được sử dụng để làm bánh mì và sản xuất rượu.
+yeastily	Nhào kỹ càng
+yellow	màu vàng
+Yellow-bellied	nhút nhát, sợ hãi
+Yellowish	màu vàng nhạt
+yellowwood	gỗ màu vàng
+yelp	kêu lên
+Yeoman	một người thuộc tầng lớp trung lưu
+yeomanry	nấm men
+yesterday	hôm qua   
+yeuked	yêu thích
+Yiddish	một ngôn ngữ được sử dụng bởi người Do Thái Ashkenazi
+Yielding	dễ uốn, dễ bẻ cong
+yikes	yểu điệu
+Yodel	hát yodle
+yoga	yoga
+yoghurt/yogurt	sữa chua
+yogically	Theo phong cách yoga
+yolk	lòng đỏ
+yonder	phía xa
+young	trẻ
+younglings	con non
 your	của bạn
 yours faithfully	trung thành, chung thủy, trung thực
 yours sincerely	một cách chân thành
 yours truly	đúng sự thật, đích thực, thực sự
-a	A
+yourself	bản thân bạn
+youth	thiếu niên
+Youthfully	trẻ trung
+youthward	Hướng giới trẻ
+yowlingly	Ầm ĩ
+yuck	kinh quá
+yuckily	kinh tởm
+yummy	ngon ngon
+Zaid	Trung thực, vĩ đại
+Zaiden	Sức mạnh
+Zain	Thông minh, tài giỏi, hạnh phúc
+Zak	Tiếng cười, tinh khiết
+Zane	Người yêu dấu
+Zara	Công chúa, quý cô, tỏa sáng
+Zaria	 Công chúa, mặt trời, người phụ nữ mạnh mẽ
+Zarina	Bằng vàng, Nữ hoàng
+Zaydin	Đẹp trai
+Zayna	Xinh đẹp, duyên dáng
+Zayne	Tinh khiết, tình yêu
+zeabra	Ngựa vằn
+Zee	Hạnh phúc
+Zeisha	Người yêu quý
+Zeke	Sức mạnh của Chúa
+zenistvo	Hội đồng tự quản địa phương; vải mỏng, vải voan
+Zenith	Ở vị trí cao nhất
+Zenny	Quý tộc, cao quý
+zenth	Thiên định; điểm cao nhất, cực điểm, tột đỉnh (quyền hạn, sự thịnh vượng)
+zephyr	Văn gió mát, gió hiu hiu, gió nhẹ
+zero number	/’ziərou/ số không
+zeta	 Mẫu tự thứ 6 trong bảng chữ cái của Hy Lạp
+Zeus	Thần Dớt
+zigzag	ngoàn nghèo 
+zillionaire	Nhà giàu kết sù, kẻ giàu sụ
+zincoraphy	Thuật khắc bản kẽm
+zing	Sự hăng hái, sự hoạt động tích cực, rung nhanh, mạnh vs tiếng rung âm thanh cao
+Zinnia	Zinnia: Khu vườn hoa
+Zippy	Nhanh nhẹn
+Zllion	Tục số lớn, vô hạn
+Zoey	Người có trách nhiệm, trung thực, hạnh phúc
+Zola	Tĩnh lặng
+zone	khu vực, miền, vùng   
+zoo	sở thú
+Zuhrah	Sự thông minh, sáng dạ 
+your name	nguyen van a
