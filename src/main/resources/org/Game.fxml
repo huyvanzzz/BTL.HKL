@@ -27,7 +27,7 @@
       </Pane>
       <Pane layoutY="89.0" prefHeight="563.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25;">
          <children>
-            <Button fx:id="search" alignment="BASELINE_LEFT" graphicTextGap="42.0" layoutX="3.0" layoutY="20.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@tab-buttons.css" text="Search" textFill="WHITE">
+            <Button fx:id="search" alignment="BASELINE_LEFT" graphicTextGap="42.0" layoutX="3.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchToSearchScene" prefHeight="46.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@tab-buttons.css" text="Search" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
@@ -57,7 +57,7 @@
                   <Insets left="10.0" />
                </padding>
             </Button>
-            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="188.0" mnemonicParsing="false" onAction="#switchToGameScene" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@tab-buttons.css" text="Game" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="188.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="195.0" styleClass="tab-button" stylesheets="@tab-buttons.css" text="Game" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
