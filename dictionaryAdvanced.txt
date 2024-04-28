@@ -1,4 +1,4 @@
-a	A
+a	a
 a few	một ít, một vài
 a little	det., pron. nhỏ, một ít
 abandoned	adj. /ə'bændənd/ bị bỏ rơi, bị ruồng bỏ
@@ -2429,6 +2429,7 @@ quantity	n. /ˈkwɒntɪti/ lượng, số lượng
 quarter	n. /'kwɔ:tə/ 1/4, 15 phút
 queen	n. /kwi:n/  nữ hoàng
 question	n., v. /ˈkwɛstʃən/  câu hỏi; hỏi, chất vấn
+queue	hàng đợi
 quick	adj. /kwik/ nhanh
 quickly	adv. /´kwikli/  nhanh
 quiet	adj. /'kwaiət/ lặng, yên lặng, yên tĩnh
@@ -3495,6 +3496,7 @@ written	adj. /'ritn/ viết ra, được thảo ra
 wrong	adj., adv. /rɔɳ/  sai
 wrongly	adv. /´rɔηgli/ một cách bất công, không đúng
 x-ray	(n.) /ˈeks.reɪ/ tia X
+xenial	Mối quan hệ thân thiết, gần giữa hai người
 xenogenesis	(n.) /ˌzen.əˈdʒen.ə.sɪs/ sự phát triển của loài qua nhiều thế hệ
 xenolithic	(adj.) /ˌzen.əˈlɪθ.ɪk/ có chứa đá ngoại lai
 xenon 	(n.) /ˈzen.ɑːn/ xenon (nguyên tố hóa học)
@@ -3558,5 +3560,3 @@ zone	khu vực, miền, vùng
 zoo	sở thú
 zuhrah	Sự thông minh, sáng dạ
 ﻿a couple	một cặp, một đôi
-xenial	Mối quan hệ thân thiết, gần giữa hai người
-queue	hàng đợi
