@@ -31,7 +31,6 @@ public class ConnectWordGameController extends Controller implements Initializab
     private List<Word> words = new ArrayList<>(Dictionary.dictionary.wordArrayList);
     private String a = "";
     private String b = "";
-    private String h;
     @FXML
     private Label A;
     @FXML
