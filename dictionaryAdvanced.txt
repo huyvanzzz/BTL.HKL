@@ -1,4 +1,4 @@
-a	a
+a	A
 a few	một ít, một vài
 a little	det., pron. nhỏ, một ít
 abandoned	adj. /ə'bændənd/ bị bỏ rơi, bị ruồng bỏ
@@ -3560,3 +3560,4 @@ zone	khu vực, miền, vùng
 zoo	sở thú
 zuhrah	Sự thông minh, sáng dạ
 ﻿a couple	một cặp, một đôi
+b	B

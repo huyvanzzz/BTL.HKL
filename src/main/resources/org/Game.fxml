@@ -115,7 +115,7 @@
                   <Image url="@noi-chu-tieng-anh-2-200.png" />
                </image></ImageView>
             <Button layoutX="142.0" layoutY="464.0" mnemonicParsing="false" onAction="#switchToChoiceGame" style="-fx-border-color: #000000;" stylesheets="@application.css" text="Choice" />
-            <Button layoutX="436.0" layoutY="464.0" mnemonicParsing="false" onAction="#switchToConnectGame" style="-fx-border-color: #000000;" stylesheets="@application.css" text="Connet Word" />
+            <Button layoutX="432.0" layoutY="464.0" mnemonicParsing="false" onAction="#switchToConnectGame" style="-fx-border-color: #000000;" stylesheets="@application.css" text="Word Connect" />
          </children>
       </Pane>
    </children>
