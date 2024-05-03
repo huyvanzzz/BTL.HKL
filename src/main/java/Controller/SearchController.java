@@ -33,7 +33,7 @@ public class SearchController extends Controller implements Initializable {
             }
             searchResult.clear();
             // Tạo danh sách mới để lưu trữ kết quả tìm kiếm
-            searchResult = DictionaryCommandline.searchWordsWithPrefix(keyword);
+            searchResult = DictionaryCommandline.searchWords(keyword);
             if(searchResult !=null){
             Collections.sort(searchResult);
             // Hiển thị kết quả tìm kiếm trên ListView

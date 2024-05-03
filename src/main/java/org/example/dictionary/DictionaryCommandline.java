@@ -13,8 +13,8 @@ public class DictionaryCommandline extends DictionaryManagement {
         }
     }
 
-    public static ObservableList<String> searchWordsWithPrefix(String prefix) {
-        return trie.autoSearch(prefix);
+    public static ObservableList<String> searchWords(String a) {
+        return trie.autoSearch(a);
     }
 
     /**
@@ -88,7 +88,7 @@ public class DictionaryCommandline extends DictionaryManagement {
             if (a == 6) {
                 System.out.println("Search: ");
                 x = sc.nextLine();
-                DictionaryCommandline.searchWordsWithPrefix(x);
+                DictionaryCommandline.searchWords(x);
             }
             if (a == 7) {
                 System.out.println("Start Game: ");

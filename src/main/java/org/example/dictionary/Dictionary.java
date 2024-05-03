@@ -5,10 +5,7 @@ import javafx.collections.ObservableList;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 
 public class Dictionary extends Word {
@@ -38,11 +35,14 @@ public class Dictionary extends Word {
     }
 
     public int findWord(Word word) {
-        return Collections.binarySearch(
-                wordArrayList,
-                word,
-                new Compare()
-        );
+        Comparator<Word> comparator = new Comparator<Word>() {
+            @Override
+            public int compare(Word w1, Word w2) {
+                return w1.getWord_target().compareToIgnoreCase(w2.getWord_target());
+            }
+        };
+
+        return Collections.binarySearch(wordArrayList, word, comparator);
     }
 
 

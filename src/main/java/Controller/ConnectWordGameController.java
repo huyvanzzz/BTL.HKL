@@ -43,7 +43,7 @@ public class ConnectWordGameController extends Controller implements Initializab
 
     public void hints(ActionEvent e) {
         String x = label.getText();
-        searchResult = DictionaryCommandline.searchWordsWithPrefix(x);
+        searchResult = DictionaryCommandline.searchWords(x);
         if (point < 200) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "ERROR");
             alert.getDialogPane().setHeaderText("Missing");
@@ -70,7 +70,7 @@ public class ConnectWordGameController extends Controller implements Initializab
     }
 
     public void change() {
-        if (a.equalsIgnoreCase(label.getText()) && times > 0) {
+        if (a.equalsIgnoreCase(label.getText()) && times > 0 && check(textField.getText())) {
             label.setText(b);
             point += 100;
             A.setText("Point: " + point);

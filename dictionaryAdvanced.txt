@@ -1,11 +1,10 @@
-a	A
+a	a
 a few	một ít, một vài
 a little	det., pron. nhỏ, một ít
 abandoned	adj. /ə'bændənd/ bị bỏ rơi, bị ruồng bỏ
 ability	n. /ə'biliti/ khả năng, năng lực
 able	adj. /'eibl/ có năng lực, có tài
 about	adv., prep. /ə'baut/ khoảng, về
-above	prep., adv. /ə'bʌv/ ở trên, lên trên
 abroad	adv. /ə'brɔ:d/ ở, ra nước ngoài, ngoài trời
 absence	n. /'æbsəns/ sự vắng mặt
 absent	adj. /'æbsənt/ vắng mặt, nghỉ
@@ -258,6 +257,7 @@ awful	adj. /'ɔ:ful/ oai nghiêm, dễ sợ
 awfully	adv. tàn khốc, khủng khiếp
 awkward	adj. /'ɔ:kwəd/ vụng về, lung túng
 awkwardly	adv. vụng về, lung túng
+b	B
 back	n., adj., adv., v. /bæk/ lưng, về phía sau, trở lại
 background	n. /'bækgraund/ phía sau; nền
 backward	adj. /'bækwəd/ về phía sau, lùi lại
@@ -1499,6 +1499,7 @@ hunting	n. /'hʌntiɳ/ sự đi săn
 hurry	v., n. /ˈhɜri , ˈhʌri/ sự vội vàng, sự gấp rút
 hurt	v. /hɜrt/  làm bị thương, gây thiệt hại
 husband	n. /´hʌzbənd/ người chồng
+huy	A+
 i.e. abbr	. nghĩa là, tức là ( Id est)
 ice	n. /ais/ băng, nước đá
 ice cream	n. kem
@@ -3560,4 +3561,3 @@ zone	khu vực, miền, vùng
 zoo	sở thú
 zuhrah	Sự thông minh, sáng dạ
 ﻿a couple	một cặp, một đôi
-b	B

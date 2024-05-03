@@ -2,6 +2,7 @@ package org.example.dictionary;
 
 import java.util.HashMap;
 import java.util.Map;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -19,13 +20,13 @@ public class Trie {
     }
 
     // Constructor với tham số value
-    private Trie(String value) {
+    public Trie(String value) {
         this.value = value;
         children = new HashMap<>();
     }
 
     // Phương thức thêm một nút con
-    private void addChild(char character) {
+    public void addChild(char character) {
         String str;
         if (this.value == null) {
             str = Character.toString(Character.toLowerCase(character));
@@ -51,6 +52,19 @@ public class Trie {
         currentNode.isAdded = true;
     }
 
+    // Phương thức xóa một từ khỏi Trie
+    public void delete(String wordToDelete) {
+        Trie currentNode = this;
+        for (char c : wordToDelete.toCharArray()) {
+            char lowerCaseChar = Character.toLowerCase(c);
+            if (!currentNode.children.containsKey(lowerCaseChar)) {
+                return;
+            }
+            currentNode = currentNode.children.get(lowerCaseChar);
+        }
+        currentNode.isAdded = false;
+    }
+
     // Phương thức tìm kiếm các từ có tiền tố là prefix
     public ObservableList<String> autoSearch(String prefix) {
         Trie currentNode = this;
@@ -65,10 +79,10 @@ public class Trie {
     }
 
     // Phương thức đệ quy trả về tất cả các từ dưới dạng danh sách quan sát được
-    private ObservableList<String> getAllWords() {
+    public ObservableList<String> getAllWords() {
         ObservableList<String> wordList = FXCollections.observableArrayList();
-        if (this.isAdded) {
-            wordList.add(this.value);
+        if (isAdded) {
+            wordList.add(value);
         }
         for (Map.Entry<Character, Trie> entry : children.entrySet()) {
             Trie childNode = entry.getValue();
@@ -76,18 +90,5 @@ public class Trie {
             wordList.addAll(words);
         }
         return wordList;
-    }
-
-    // Phương thức xóa một từ khỏi Trie
-    public void delete(String wordToDelete) {
-        Trie currentNode = this;
-        for (char c : wordToDelete.toCharArray()) {
-            char lowerCaseChar = Character.toLowerCase(c);
-            if (!currentNode.children.containsKey(lowerCaseChar)) {
-                return;
-            }
-            currentNode = currentNode.children.get(lowerCaseChar);
-        }
-        currentNode.isAdded = false;
     }
 }
