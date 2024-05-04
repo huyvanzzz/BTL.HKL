@@ -8,9 +8,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class ChooseTheRightWordGame {
-    protected ArrayList<String> ques = new ArrayList<>();
-    protected ArrayList<String> ans = new ArrayList<>();
-    protected ArrayList<ArrayList<String>> options = new ArrayList<>();
+    private ArrayList<String> ques = new ArrayList<>();
+    private ArrayList<String> ans = new ArrayList<>();
+    private ArrayList<ArrayList<String>> options = new ArrayList<>();
 
     private static final String Path_ques = "data/ques.txt";
     private static final String Path_ans = "data/ans.txt";
