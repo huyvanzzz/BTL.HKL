@@ -69,9 +69,4 @@ public class ChooseTheRightWordGame {
             // Xử lý ngoại lệ khi không tìm thấy tệp
         }
     }
-
-    public int Random(int a) {
-        Random random = new Random();
-        return random.nextInt(a); // trả về giá trị từ 0  đến a -1;
-    }
 }

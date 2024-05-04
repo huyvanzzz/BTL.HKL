@@ -13,6 +13,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.ResourceBundle;
 
 public class ChoiceGameController extends Controller implements Initializable {
@@ -49,7 +50,8 @@ public class ChoiceGameController extends Controller implements Initializable {
         ArrayList<String> question1 = chooseTheRightWordGame.getQues();
         ArrayList<String> ans = chooseTheRightWordGame.getAns();
         ArrayList<ArrayList<String>> option = chooseTheRightWordGame.getOptions();
-        int a = chooseTheRightWordGame.Random(45);
+        Random random = new Random();
+        int a = random.nextInt(45); // Số 45 là số lớn hơn index cao nhất bạn muốn random
         A.setText(option.get(a).get(0));
         B.setText(option.get(a).get(1));
         C.setText(option.get(a).get(2));
