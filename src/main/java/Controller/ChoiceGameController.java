@@ -61,7 +61,7 @@ public class ChoiceGameController extends Controller implements Initializable {
     }
 
     @FXML
-    void handleButtonClick(ActionEvent event) {
+    public void handleButtonClick(ActionEvent event) {
         Button clickedButton = (Button) event.getSource();
         String buttonText = clickedButton.getText();
 
