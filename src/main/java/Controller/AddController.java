@@ -19,35 +19,40 @@ public class AddController extends Controller {
     private TextField ExplainField;
 
     public void AddOrUpdateWord(ActionEvent e) {
-        Word x = new Word(WordField.getText(), ExplainField.getText());
-        Stage stage = (Stage) AnchorPane.getScene().getWindow();
-        if (WordField.getText().isEmpty() || ExplainField.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "ERROR");
-            alert.getDialogPane().setHeaderText("Missing");
-            alert.getDialogPane().setContentText("ERROR");
-            alert.showAndWait();
+        String wordText = WordField.getText();
+        String explainText = ExplainField.getText();
+
+        if (wordText.isEmpty() || explainText.isEmpty()) {
+            showAlert("Missing", "ERROR");
             return;
         }
-        Alert alert1 = new Alert(Alert.AlertType.CONFIRMATION);
-        alert1.initModality(Modality.APPLICATION_MODAL);// chỉ cho phép tương tác vs alert
-        alert1.initOwner(stage);// cửa sổ thông báo sẽ được hiển thị trên cửa sổ gốc này và sẽ nằm trên đỉnh khi hiển thị
-        if (DictionaryManagement.dictionaryLookup(WordField.getText())) {
-            alert1.getDialogPane().setHeaderText("UPDATE WORD");
-            alert1.getDialogPane().setContentText("What is your choice??");
-            Optional<ButtonType> optional = alert1.showAndWait();
-            if (optional.get() == ButtonType.OK) {
-                DictionaryManagement.fix(WordField.getText(),ExplainField.getText());
+
+        Stage stage = (Stage) AnchorPane.getScene().getWindow();
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.initModality(Modality.APPLICATION_MODAL);
+        alert.initOwner(stage);
+
+        boolean isNewWord = !DictionaryManagement.dictionaryLookup(wordText);
+        alert.getDialogPane().setHeaderText(isNewWord ? "ADD WORD" : "UPDATE WORD");
+        alert.getDialogPane().setContentText("What is your choice??");
+        Optional<ButtonType> optional = alert.showAndWait();
+
+        if (optional.isPresent() && optional.get() == ButtonType.OK) {
+            Word word = new Word(wordText, explainText);
+            if (isNewWord) {
+                DictionaryManagement.addword(word);
+            } else {
+                DictionaryManagement.fix(wordText, explainText);
             }
-        } else {
-            alert1.getDialogPane().setHeaderText("ADD WORD");
-            alert1.getDialogPane().setContentText("What is your choice??");
-            Optional<ButtonType> optional = alert1.showAndWait();
-            if (optional.get() == ButtonType.OK) {
-                DictionaryManagement.addword(x);
-            }
+            DictionaryManagement.dictionaryExportToFile();
+            WordField.setText("");
+            ExplainField.setText("");
         }
-        DictionaryManagement.dictionaryExportToFile();
-        WordField.setText("");
-        ExplainField.setText("");
+    }
+
+    private void showAlert(String headerText, String contentText) {
+        Alert alert = new Alert(Alert.AlertType.ERROR, contentText);
+        alert.getDialogPane().setHeaderText(headerText);
+        alert.showAndWait();
     }
 }
