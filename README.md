@@ -30,19 +30,20 @@ The application is designed to support learning English. The application is writ
 3. To delete a word, click the Delete button (Delete icon).
 4. To save the changes, click the Save button (swap icon).
 5. To pronounce the word, click the Pronounce button (Speaker icon).
-6. To practice, click the Practice button (Play icon), then the application will display a Game window, choose the game you want to play : Choice
-   + In the Game window, click the Start button to start the game.
-   + The application will display a word that is removed some letters, you need to enter the missing letters in the text box and click the Check button to check the answer.
-   + If the answer is correct, the application will display a new word and increase the score by 100.
-   + If the answer is incorrect, the application will display a new word and decrease the score by 100.
+6. To practice, click the Practice button (Play icon), then the application will display a Game window, choose the game you want to play : ChoiceGame
+   + In the Game window, click the Choice button to start the game.
+   + The application will display a question, you need to choose the correct answer.
+   + If the answer is correct, the application will increase the score by 100.
+   + If the answer is incorrect, the application will decrease the score by 100.
+   + If you want to change the question, you need to click the Change button .
    + To exit the game, click the Exit button (Exit icon).
    + To play again, click the Play again button (Reset button).
-7. To practice, click the Practice button (Play icon), then the application will display a Game window, choose the game you want to play : Connect word
-   + In the Game window, click the Start button to start the game
+7. To practice, click the Practice button (Play icon), then the application will display a Game window, choose the game you want to play : ConnectGame
+   + In the Game window, click the Word Connect button to start the game
    + The program will display the first letter of the word you need to enter the word starting with that letter.
    + If the answer is correct, the application will display a new word and increase the score by 100.
    + If the answer is incorrect, the application will display a new word and decrease the score by 100.
-   + If you want to use the hint, you will lose score by 200.
+   + If you want to use the hint, you will lose the score by 200.
    + To exit the game, click the Exit button (Exit icon).
    + To play again, click the Play again button (Reset button).
 8. To exit the application, click the Exit button (Cross icon).
