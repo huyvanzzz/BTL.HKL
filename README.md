@@ -14,7 +14,7 @@ The application is designed to support learning English. The application is writ
 4. The application has dictionaries: English-Vietnamese.
 5. The application use dictionaryAdvanced.txt files to store data.
 
-## UML diagram
+##UML diagram
 ![UML diagram](caykethua/Main.jpg)
 
 ## Installation
@@ -31,14 +31,14 @@ The application is designed to support learning English. The application is writ
 4. To save the changes, click the Save button (swap icon).
 5. To pronounce the word, click the Pronounce button (Speaker icon).
 6.  To practice, click the Practice button (Play icon), then the application will display a Game window,Please choose the game you want to play
-   -Choice
+6.1. Choice
    + In the Game window, click the Start button to start the game.
    + The application will display a word that is removed some letters, you need to enter the missing letters in the text box and click the Check button to check the answer.
    + If the answer is correct, the application will display a new word and increase the score by 1.
    + If the answer is incorrect, the application will display a new word and decrease the score by 1.
    + To exit the game, click the Exit button (Cross icon).
    + To play again, click the Play again button (Play icon).
-   -Connet word
+6.2. Connet word
    + In the Game window, click the Start button to start the game
    + The program will display the first letter of the word you need to enter the word starting with that letter.
    + If the answer is correct, the application will display a new word and increase the score by 1.
