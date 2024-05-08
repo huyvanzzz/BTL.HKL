@@ -22,11 +22,18 @@ public class ApiController extends Controller {
     private Label LabelIn, LabelOut;
 
     public void sound(ActionEvent e) {
-        String word = TransInput.getText();
+        String word;
+        if (inputLanguage.equals("en")) {
+            word = TransInput.getText();
+        }
+        else  {
+            word = TransOutput.getText();
+        }
         if (!word.isEmpty()) {
             TextToSpeech.speak(word);
         }
     }
+
     public void swap(ActionEvent e) {
         String x = inputLanguage;
         inputLanguage = outputLanguage;
