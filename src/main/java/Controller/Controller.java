@@ -2,7 +2,6 @@ package Controller;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import org.example.dictionary.Dictionary;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,7 +15,6 @@ import javafx.scene.control.ListView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import org.example.dictionary.DictionaryCommandline;
 
 import java.io.File;
 import java.io.IOException;
@@ -56,6 +54,10 @@ public abstract class Controller {
         switchScene(e, "/org/Game.fxml");
     }
 
+    @FXML
+    protected void switchToSceneFavorite(ActionEvent e) throws IOException{
+        switchScene(e, "/org/Favorite.fxml");
+    }
     protected void switchScene(ActionEvent e, String path) throws IOException {
         root = FXMLLoader.load(getClass().getResource(path));
         stage = (Stage) ((Node) e.getSource()).getScene().getWindow();

@@ -9,7 +9,6 @@ import javafx.scene.Scene;
 import org.example.dictionary.DictionaryManagement;
 import org.example.dictionary.TextToSpeech;
 
-import java.io.IOException;
 
 
 public class ApplicationDictionary extends Application {

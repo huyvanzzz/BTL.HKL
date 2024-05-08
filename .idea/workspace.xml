@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d11b8a22-21a9-4d10-a51b-6d32990db35f" name="Changes" comment="" />
+    <list default="true" id="d11b8a22-21a9-4d10-a51b-6d32990db35f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/FavoriteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/Favorite.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dictionaryExportToFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionaryAdvanced.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionaryAdvanced.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/ApplicationDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/ApplicationDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/API.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/API.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/AddWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/AddWord.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/Game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/Main.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
