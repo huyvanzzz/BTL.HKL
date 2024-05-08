@@ -25,7 +25,7 @@ The application is designed to support learning English. The application is writ
 4. If you want to change the data, you can change the dictionaryAdvanced.txt.
 
 ## Usage
-1. Search for a word in the dictionary and click the Search button, then the left side of the window will display the meaning of the word.
+1. Search for a word in the dictionary and type word, then the right side of the window will display the meaning of the word.
 2. To add a new word, click the Operation Word (swap icon).
 3. To delete a word, click the Delete button (Delete icon).
 4. To save the changes, click the Operation Word (Plus icon).
