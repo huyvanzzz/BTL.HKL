@@ -28,7 +28,7 @@ The application is designed to support learning English. The application is writ
 1. Search for a word in the dictionary and click the Search button, then the left side of the window will display the meaning of the word.
 2. To add a new word, click the Operation Word (swap icon).
 3. To delete a word, click the Delete button (Delete icon).
-4. To save the changes, click the Operation Word (swap icon).
+4. To save the changes, click the Operation Word (Plus icon).
 5. save words to favorites,click the favorites button ( favorites icon)
 6. API of Google Translate to translate,click the Translate button ( Translate icon)
 7. To pronounce the word, click the Pronounce button (Speaker icon).
@@ -37,7 +37,8 @@ The application is designed to support learning English. The application is writ
    + The application will display a word that is removed some letters, you need to enter the missing letters in the text box and click the Check button to check the answer.
    + If the answer is correct, the application will display a new word and increase the score by 100.
    + If the answer is incorrect, the application will display a new word and decrease the times by 1.
-   + To exit the game, click the Exit button (Cross icon).
+   + To exit the game, click the Exit button (Exit icon).
+   + To reset the game, click the Reset button.
 9. To practice, click the Practice button (Play icon), then the application will display a Game window, choose the game you want to play : ConnectGame
    + In the Game window, click the Word Connect button to start the game
    + The program will display the first letter of the word you need to enter the word starting with that letter.
@@ -45,7 +46,8 @@ The application is designed to support learning English. The application is writ
    + If the answer is incorrect, the application will display a new word and decrease the times by 1.
    + If you want to use the hint, you will lose the score by 200.
    + To exit the game, click the Exit button (Exit icon).
-10. To exit the application, click the Exit button (Cross icon).
+   + To reset the game, click the Reset button.
+10. To exit the application, click the Exit button (Exit icon).
 
 ## Demo
 + search
