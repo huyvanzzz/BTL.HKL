@@ -29,6 +29,7 @@ public class ChoiceGameController extends Controller implements Initializable {
     private Label question;
     private String answer;
     private int seconds = 0;
+    private int count = 0;
     @FXML
     private Label label2;
     @FXML
@@ -38,26 +39,25 @@ public class ChoiceGameController extends Controller implements Initializable {
     @FXML
     private Pane paneAlert;
     private final ChooseTheRightWordGame chooseTheRightWordGame = new ChooseTheRightWordGame();
-
-    public void read() {
-        chooseTheRightWordGame.readAnswer();
-        chooseTheRightWordGame.readQuestion();
-        chooseTheRightWordGame.readOption();
-    }
+    ArrayList<String> question1 = chooseTheRightWordGame.readQuestion();
+    ArrayList<String> ans = chooseTheRightWordGame.readAnswer();
+    ArrayList<ArrayList<String>> option = chooseTheRightWordGame.readOption();
 
     public void setABCD() {
-        read();
-        ArrayList<String> question1 = chooseTheRightWordGame.getQues();
-        ArrayList<String> ans = chooseTheRightWordGame.getAns();
-        ArrayList<ArrayList<String>> option = chooseTheRightWordGame.getOptions();
         Random random = new Random();
-        int a = random.nextInt(45); // Số 45 là số lớn hơn index cao nhất bạn muốn random
-        A.setText(option.get(a).get(0));
-        B.setText(option.get(a).get(1));
-        C.setText(option.get(a).get(2));
-        D.setText(option.get(a).get(3));
-        question.setText(question1.get(a));
-        answer = ans.get(a);
+        if (!question1.isEmpty()) {
+            int a = random.nextInt(question1.size());
+            // Số 45 là số lớn hơn index cao nhất bạn muốn random
+            A.setText(option.get(a).get(0));
+            B.setText(option.get(a).get(1));
+            C.setText(option.get(a).get(2));
+            D.setText(option.get(a).get(3));
+            question.setText(question1.get(a));
+            answer = ans.get(a);
+            question1.remove(a);
+            ans.remove(a);
+            option.remove(a);
+        }
     }
 
     @FXML
@@ -72,6 +72,7 @@ public class ChoiceGameController extends Controller implements Initializable {
             point += 100;
             label1.setText("Point: " + point);
             mediaPlayer.stop();
+            disableAnswerButtons();
         } else {
             times--;
             setIncorrectButtonStyle(clickedButton);
@@ -82,13 +83,26 @@ public class ChoiceGameController extends Controller implements Initializable {
             addCorrectAnswerButton(D);
             label1.setText("Point: " + point);
             mediaPlayer.stop();
+            disableAnswerButtons();
             if (times == 0) {
                 paneAlert.setVisible(true);
                 label2.setText("LastPoint: " + point);
             }
         }
     }
-
+    private void disableAnswerButtons() {
+        // Vô hiệu hóa các nút đáp án
+        A.setDisable(true);
+        B.setDisable(true);
+        C.setDisable(true);
+        D.setDisable(true);
+    }
+    private void setDisableAnswerButtons(){
+        A.setDisable(false);
+        B.setDisable(false);
+        C.setDisable(false);
+        D.setDisable(false);
+    }
     public void setColor() {
         A.setStyle("-fx-border-color: black;");
         B.setStyle("-fx-border-color: black;");
@@ -117,11 +131,16 @@ public class ChoiceGameController extends Controller implements Initializable {
     }
 
     public void refresh() {
-        if (times >= 0 && (check(A) || check(B) || check(C) || check(D))) {
+        if (times >= 0 && (check(A) || check(B) || check(C) || check(D)) && !question1.isEmpty()) {
             label.setText("Times:" + times);
             setABCD();
             setColor();
             SoundChill();
+            setDisableAnswerButtons();
+        }
+        if (question1.isEmpty()){
+            paneAlert.setVisible(true);
+            label2.setText("LastPoint: " + point);
         }
     }
 

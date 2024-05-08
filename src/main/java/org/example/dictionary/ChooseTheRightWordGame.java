@@ -29,7 +29,7 @@ public class ChooseTheRightWordGame {
         return options;
     }
 
-    public void readQuestion() {
+    public ArrayList<String> readQuestion() {
         try {
             FileReader fileReader = new FileReader(Path_ques);
             sc = new Scanner(fileReader);
@@ -40,9 +40,10 @@ public class ChooseTheRightWordGame {
             e.printStackTrace();
             // Xử lý ngoại lệ khi không tìm thấy tệp
         }
+        return ques;
     }
 
-    public void readOption() {
+    public ArrayList<ArrayList<String>> readOption() {
         try {
             FileReader fileReader = new FileReader(Path_option);
             sc = new Scanner(fileReader);
@@ -54,9 +55,10 @@ public class ChooseTheRightWordGame {
             e.printStackTrace();
             // Xử lý ngoại lệ khi không tìm thấy tệp
         }
+        return options;
     }
 
-    public void readAnswer() {
+    public ArrayList<String> readAnswer() {
         try {
             FileReader fileReader = new FileReader(Path_ans);
             sc = new Scanner(fileReader);
@@ -68,5 +70,6 @@ public class ChooseTheRightWordGame {
             e.printStackTrace();
             // Xử lý ngoại lệ khi không tìm thấy tệp
         }
+        return ans;
     }
 }
