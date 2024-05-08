@@ -48,7 +48,20 @@ The application is designed to support learning English. The application is writ
 10. To exit the application, click the Exit button (Cross icon).
 
 ## Demo
-![Demo](
++ search
+![search](src/main/resources/org/Icon/Search.png)
+
++ Google Translate
+![Translate](src/main/resources/org/Icon/Api.png)
+
++ favorite
+![favorites](src/main/resources/org/Icon/favorite.png)
+
++ Operation Word 
+![Operationword](src/main/resources/org/Icon/translate.png)
+
++ Game
+![game](src/main/resources/org/Icon/game.png)
 
 ## Future improvements
 1. Add more dictionaries.
