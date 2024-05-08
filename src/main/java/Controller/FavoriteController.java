@@ -46,14 +46,6 @@ public class FavoriteController extends Controller implements Initializable {
                 }
             }
         });
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("dictionaryExportToFile.txt"))) {
-            for (String word : listview.getItems()) {
-                writer.write(word + "\n");
-            }
-            System.out.println("Data has been exported to file successfully!");
-        } catch (IOException e) {
-            System.err.println("Error occurred while exporting data to file: " + e.getMessage());
-        }
     }
     public void RemoveWord(ActionEvent e) {
         if (word.getText().equals("Word")) {
