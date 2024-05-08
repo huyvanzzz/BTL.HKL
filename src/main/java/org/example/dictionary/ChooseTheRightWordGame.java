@@ -16,19 +16,6 @@ public class ChooseTheRightWordGame {
     private static final String Path_ans = "data/ans.txt";
     private static final String Path_option = "data/option.txt";
     private static Scanner sc;
-
-    public ArrayList<String> getQues() {
-        return ques;
-    }
-
-    public ArrayList<String> getAns() {
-        return ans;
-    }
-
-    public ArrayList<ArrayList<String>> getOptions() {
-        return options;
-    }
-
     public ArrayList<String> readQuestion() {
         try {
             FileReader fileReader = new FileReader(Path_ques);
